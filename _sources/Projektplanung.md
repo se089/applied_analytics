@@ -1,5 +1,6 @@
 # Projektplanung
-Um eine Übersicht über die benötigten Schritte zu erhalten und diese parallel zu anderen Projekten zeitlich einzuordnen, erstellte ich zu Beginn eine Übersicht, welche Schritte bis zum Ziel des Projekts benötigt wurden. 1. Festlegung des Unternehmens
+Um eine Übersicht über die benötigten Schritte zu erhalten und diese parallel zu anderen Projekten zeitlich einzuordnen, erstellte ich zu Beginn eine Übersicht, welche Schritte bis zum Ziel des Projekts benötigt wurden.
+1. Festlegung des Unternehmens
 2. Auseinandersetzung mit dem Geschäftsmodel (Entwicklung Business Model Canvas)
 3. Definition der Use Cases (Orientierung am Business Model Canvas und dem Data Science Lifecycle)
 4. Datenrecherche

@@ -1,0 +1,3666 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code &#8212; Projektdokumentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Recommender" href="Recommender.html" />
+    <link rel="prev" title="Clustering" href="Clustering.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Projektdokumentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Dieses Buch durchsuchen ..." aria-label="Dieses Buch durchsuchen ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Projektdokumentation
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Vorgehen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Projektplanung.html">
+   Projektplanung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Unternehmen.html">
+   Das Unternehmen
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Use Cases
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Regression.html">
+   Regression
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Regression_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="Clustering.html">
+   Clustering
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Recommender.html">
+   Recommender
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Recommendation_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navigation umschalten" aria-controls="site-navigation"
+                title="Navigation umschalten" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Laden Sie diese Seite herunter"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Clustering_Marketing.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="In PDF drucken"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
+                    class="fab fa-github"></i>Repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FClustering_Marketing.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Öffnen Sie ein Problem"><i class="fas fa-lightbulb"></i>offenes Thema</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Vollbildmodus"
+        title="Vollbildmodus"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Clustering_Marketing.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Starten Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhalt
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Code
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aim">
+     Aim
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data">
+     Data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import-data">
+   Import data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#first-look-into-the-data">
+     First look into the data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#initial-findings">
+     Initial findings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-preparation">
+   Data Preparation
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invoice-date">
+     Invoice Date
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invoiceno">
+     InvoiceNo
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stock-code-and-decscription">
+     Stock Code and Decscription
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unit-price">
+     Unit Price
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#customer-id-and-country">
+     Customer ID and Country
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-dataset-for-rfm-segmentation">
+   Create dataset for RFM-Segmentation
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calculation-rfm-features">
+     Calculation RFM-Features
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-exploration-before-clustering">
+   Data Exploration before Clustering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#drop-outliers">
+     Drop outliers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-pre-processing-before-clustering">
+   Data Pre-Processing before Clustering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-distribution-of-the-columns">
+     Check distribution of the columns
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clustering-with-kmeans">
+   Clustering with kMeans
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-cleaning-before-clustering">
+     Data Cleaning before Clustering
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#normalize-data">
+       Normalize data
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#standardize-data">
+       Standardize data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#find-perfect-number-of-k-with-silhouette-analysis">
+     Find perfect number of k with silhouette Analysis
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#performing-kmeans-clustering">
+     Performing kMeans Clustering
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#k-2">
+       k = 2
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hierarchical-clustering">
+   Hierarchical Clustering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#n-3">
+     n=3
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#n-4">
+     n=4
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#segments">
+     Segments
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#actions">
+     Actions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gold-customers">
+       Gold customers
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#silver-customers">
+       Silver customers
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bronze-customers">
+       Bronze customers
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-clusterinfo-in-original-dataset">
+   Add Clusterinfo in original dataset
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#export-df-for-recommender">
+     Export df for recommender
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import necessary libraries</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
+<span class="c1"># for better 3D-Visualisation</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">silhouette_score</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.manifold</span> <span class="kn">import</span> <span class="n">TSNE</span>
+<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">,</span> <span class="n">color_codes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="code">
+<h1>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="aim">
+<h2>Aim<a class="headerlink" href="#aim" title="Permalink to this headline">¶</a></h2>
+<p>The aim of this project to divide our customers into several homogeneous groups. This allows the marketing department to address the different target groups more efficiently. We will perform a clustering based on RFM (Recency, Frequency, Monetary value). Frequency and monetary value are an indicator for the customer’s lifetime value, whereas recency shows the engagement of the customer.</p>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<p>The dataset is from kaggle: <a class="reference external" href="https://www.kaggle.com/vijayuv/onlineretail">https://www.kaggle.com/vijayuv/onlineretail</a>. It includes information such as Invoice Number, Invoice Date, Customer Id, Selling price and quantity.
+Features:</p>
+<ul class="simple">
+<li><p>InvoiceNo: Invoice Number assigned to each order. If this code starts with letter ‘c’, it indicates a cancellation.</p></li>
+<li><p>StockCode: Product (item) code assigned to each product.</p></li>
+<li><p>Description: Product name.</p></li>
+<li><p>Quantity: Amount of each each product (item) per transaction.</p></li>
+<li><p>InvoiceDate: Date, where order was made.</p></li>
+<li><p>UnitPrice: Price of a single product.</p></li>
+<li><p>CustomerID: Customer number assigned to each customer.</p></li>
+<li><p>Country: Country, where each customer resides.</p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="import-data">
+<h1>Import data<a class="headerlink" href="#import-data" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Clustering_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;unicode_escape&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 541909 entries, 0 to 541908
+Data columns (total 8 columns):
+ #   Column       Non-Null Count   Dtype  
+---  ------       --------------   -----  
+ 0   InvoiceNo    541909 non-null  object 
+ 1   StockCode    541909 non-null  object 
+ 2   Description  540455 non-null  object 
+ 3   Quantity     541909 non-null  int64  
+ 4   InvoiceDate  541909 non-null  object 
+ 5   UnitPrice    541909 non-null  float64
+ 6   CustomerID   406829 non-null  float64
+ 7   Country      541909 non-null  object 
+dtypes: float64(2), int64(1), object(5)
+memory usage: 33.1+ MB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="first-look-into-the-data">
+<h2>First look into the data<a class="headerlink" href="#first-look-into-the-data" title="Permalink to this headline">¶</a></h2>
+<p>The data contains 541909 rows. Each row stands for one product of an order. Orders can be grouped by the InvoiceNo. As we can already see there are less entries in the CustomerID column which indicates that there are missing values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#first look into the data</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>536365</td>
+      <td>85123A</td>
+      <td>WHITE HANGING HEART T-LIGHT HOLDER</td>
+      <td>6</td>
+      <td>12/1/2010 8:26</td>
+      <td>2.55</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>536365</td>
+      <td>71053</td>
+      <td>WHITE METAL LANTERN</td>
+      <td>6</td>
+      <td>12/1/2010 8:26</td>
+      <td>3.39</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>536365</td>
+      <td>84406B</td>
+      <td>CREAM CUPID HEARTS COAT HANGER</td>
+      <td>8</td>
+      <td>12/1/2010 8:26</td>
+      <td>2.75</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>536365</td>
+      <td>84029G</td>
+      <td>KNITTED UNION FLAG HOT WATER BOTTLE</td>
+      <td>6</td>
+      <td>12/1/2010 8:26</td>
+      <td>3.39</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>536365</td>
+      <td>84029E</td>
+      <td>RED WOOLLY HOTTIE WHITE HEART.</td>
+      <td>6</td>
+      <td>12/1/2010 8:26</td>
+      <td>3.39</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#number of unique values of each column</span>
+<span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>InvoiceNo      25900
+StockCode       4070
+Description     4223
+Quantity         722
+InvoiceDate    23260
+UnitPrice       1630
+CustomerID      4372
+Country           38
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Quantity</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>541909.000000</td>
+      <td>541909.000000</td>
+      <td>406829.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>9.552250</td>
+      <td>4.611114</td>
+      <td>15287.690570</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>218.081158</td>
+      <td>96.759853</td>
+      <td>1713.600303</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>-80995.000000</td>
+      <td>-11062.060000</td>
+      <td>12346.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1.000000</td>
+      <td>1.250000</td>
+      <td>13953.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>3.000000</td>
+      <td>2.080000</td>
+      <td>15152.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>10.000000</td>
+      <td>4.130000</td>
+      <td>16791.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>80995.000000</td>
+      <td>38970.000000</td>
+      <td>18287.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#check missing values</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">(),</span><span class="n">yticklabels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">cbar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Clustering_Marketing_8_0.png" src="_images/Clustering_Marketing_8_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>InvoiceNo           0
+StockCode           0
+Description      1454
+Quantity            0
+InvoiceDate         0
+UnitPrice           0
+CustomerID     135080
+Country             0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="initial-findings">
+<h2>Initial findings<a class="headerlink" href="#initial-findings" title="Permalink to this headline">¶</a></h2>
+<p>The data contains information about 25900 orders, which were made by 4372 customers from 38 different countries. Also the dataset includes 4070 different products. The average price of a product is 4.61 €. <br></br>
+<strong>Needs further investigation:</strong></p>
+<ul class="simple">
+<li><p>There are probably some mistakes in the data as there are negative values for UnitPrice and Quantity.</p></li>
+<li><p>Min and max of Quantity is 80995, which also indicates an error or data reversal.</p></li>
+<li><p>The negative min of unit price could indicate cancellations of orders as negative prices are not common for products.</p></li>
+<li><p>The missing values in the CustomerID column are a problem as customers must be clearly identified to assign them to one customer segment.</p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="data-preparation">
+<h1>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="invoice-date">
+<h2>Invoice Date<a class="headerlink" href="#invoice-date" title="Permalink to this headline">¶</a></h2>
+<p>We will change the datatype for InvoiceDate to enable further feature engineering.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#change data type</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="invoiceno">
+<h2>InvoiceNo<a class="headerlink" href="#invoiceno" title="Permalink to this headline">¶</a></h2>
+<p>Invoice-Numbers with “C” and “A” as a first character are assigned to cancelled orders (cancelled by customer) and bad dept adjustments (cancelled by company). As those order types don’t reflect the actual customer’s purchase behavior, we will exclude those incomplete orders from our segmentation and drop those rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#change datatype</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+
+<span class="c1"># Select rows with an C or A in the beginning of the InvoiceNo</span>
+<span class="n">df_cancelled</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">])]</span>
+<span class="n">df_cancelled</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>141</th>
+      <td>C536379</td>
+      <td>D</td>
+      <td>Discount</td>
+      <td>-1</td>
+      <td>2010-12-01 09:41:00</td>
+      <td>27.50</td>
+      <td>14527.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>C536383</td>
+      <td>35004C</td>
+      <td>SET OF 3 COLOURED  FLYING DUCKS</td>
+      <td>-1</td>
+      <td>2010-12-01 09:49:00</td>
+      <td>4.65</td>
+      <td>15311.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>235</th>
+      <td>C536391</td>
+      <td>22556</td>
+      <td>PLASTERS IN TIN CIRCUS PARADE</td>
+      <td>-12</td>
+      <td>2010-12-01 10:24:00</td>
+      <td>1.65</td>
+      <td>17548.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>236</th>
+      <td>C536391</td>
+      <td>21984</td>
+      <td>PACK OF 12 PINK PAISLEY TISSUES</td>
+      <td>-24</td>
+      <td>2010-12-01 10:24:00</td>
+      <td>0.29</td>
+      <td>17548.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>237</th>
+      <td>C536391</td>
+      <td>21983</td>
+      <td>PACK OF 12 BLUE PAISLEY TISSUES</td>
+      <td>-24</td>
+      <td>2010-12-01 10:24:00</td>
+      <td>0.29</td>
+      <td>17548.0</td>
+      <td>United Kingdom</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove rows</span>
+<span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="o">.</span><span class="n">InvoiceNo</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">df_cancelled</span><span class="o">.</span><span class="n">InvoiceNo</span><span class="p">)]</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>536365</td>
+      <td>85123A</td>
+      <td>WHITE HANGING HEART T-LIGHT HOLDER</td>
+      <td>6</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>2.55</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>536365</td>
+      <td>71053</td>
+      <td>WHITE METAL LANTERN</td>
+      <td>6</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>3.39</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>536365</td>
+      <td>84406B</td>
+      <td>CREAM CUPID HEARTS COAT HANGER</td>
+      <td>8</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>2.75</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>536365</td>
+      <td>84029G</td>
+      <td>KNITTED UNION FLAG HOT WATER BOTTLE</td>
+      <td>6</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>3.39</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>536365</td>
+      <td>84029E</td>
+      <td>RED WOOLLY HOTTIE WHITE HEART.</td>
+      <td>6</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>3.39</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Check</span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">])]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="stock-code-and-decscription">
+<h2>Stock Code and Decscription<a class="headerlink" href="#stock-code-and-decscription" title="Permalink to this headline">¶</a></h2>
+<p>As those columns are less relevant for our RFM-analysis, we will only change the datatypes for now.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Change datatype</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;StockCode&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;StockCode&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="unit-price">
+<h2>Unit Price<a class="headerlink" href="#unit-price" title="Permalink to this headline">¶</a></h2>
+<p>As the unit price only represents the price of a single product we need to calculate the total sum of each product per order by multiplicating the unit price and the amount bought.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TotalSum&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Quantity&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;UnitPrice&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Quantity</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>TotalSum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>532618.000000</td>
+      <td>532618.000000</td>
+      <td>397924.000000</td>
+      <td>532618.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>10.240024</td>
+      <td>3.868412</td>
+      <td>15294.315171</td>
+      <td>20.006125</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>159.593999</td>
+      <td>32.470442</td>
+      <td>1713.169877</td>
+      <td>269.296764</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>-9600.000000</td>
+      <td>0.000000</td>
+      <td>12346.000000</td>
+      <td>-0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1.000000</td>
+      <td>1.250000</td>
+      <td>13969.000000</td>
+      <td>3.750000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>3.000000</td>
+      <td>2.080000</td>
+      <td>15159.000000</td>
+      <td>9.900000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>10.000000</td>
+      <td>4.130000</td>
+      <td>16795.000000</td>
+      <td>17.700000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>80995.000000</td>
+      <td>13541.330000</td>
+      <td>18287.000000</td>
+      <td>168469.600000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># View rows with 0 TotalSum or 0 UnitPrice</span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TotalSum&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TotalSum&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>Country</th>
+      <th>TotalSum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>622</th>
+      <td>536414</td>
+      <td>22139</td>
+      <td>NaN</td>
+      <td>56</td>
+      <td>2010-12-01 11:52:00</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1970</th>
+      <td>536545</td>
+      <td>21134</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>2010-12-01 14:32:00</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1971</th>
+      <td>536546</td>
+      <td>22145</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>2010-12-01 14:33:00</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1972</th>
+      <td>536547</td>
+      <td>37509</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>2010-12-01 14:33:00</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1987</th>
+      <td>536549</td>
+      <td>85226A</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>2010-12-01 14:34:00</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>There are 2515 rows with 0 as UnitPrice. This could be due to returns or data problems. We will drop these rows for our further analysis.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove rows</span>
+<span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="o">.</span><span class="n">TotalSum</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">0</span><span class="p">])]</span>
+
+<span class="c1">#check</span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">TotalSum</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">0</span><span class="p">])]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>Country</th>
+      <th>TotalSum</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="customer-id-and-country">
+<h2>Customer ID and Country<a class="headerlink" href="#customer-id-and-country" title="Permalink to this headline">¶</a></h2>
+<p>As already mentioned, there are about 25% missing values in the CustomerID column. Without the CustomerID it is impossible to assign it to a specific cluster. Those missing values could be a result from a guest checkout. Guest checkout is mainly used for customers, who don’t buy frequently on the shop and may represent one-time purchases. However, we could not clarify those assumptions in this project. Therefore, we decide to drop those rows so that they do not falsify our result.<br></br>
+The country column is also less relevant for our RFM-analysis. Therefore, we will only change the datatype for now.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Identify rows with missing customerID</span>
+<span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>InvoiceNo           0
+StockCode           0
+Description         0
+Quantity            0
+InvoiceDate         0
+UnitPrice           0
+CustomerID     132219
+Country             0
+TotalSum            0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>Country</th>
+      <th>TotalSum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1443</th>
+      <td>536544</td>
+      <td>21773</td>
+      <td>DECORATIVE ROSE BATHROOM BOTTLE</td>
+      <td>1</td>
+      <td>2010-12-01 14:32:00</td>
+      <td>2.51</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>2.51</td>
+    </tr>
+    <tr>
+      <th>1444</th>
+      <td>536544</td>
+      <td>21774</td>
+      <td>DECORATIVE CATS BATHROOM BOTTLE</td>
+      <td>2</td>
+      <td>2010-12-01 14:32:00</td>
+      <td>2.51</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>5.02</td>
+    </tr>
+    <tr>
+      <th>1445</th>
+      <td>536544</td>
+      <td>21786</td>
+      <td>POLKADOT RAIN HAT</td>
+      <td>4</td>
+      <td>2010-12-01 14:32:00</td>
+      <td>0.85</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>3.40</td>
+    </tr>
+    <tr>
+      <th>1446</th>
+      <td>536544</td>
+      <td>21787</td>
+      <td>RAIN PONCHO RETROSPOT</td>
+      <td>2</td>
+      <td>2010-12-01 14:32:00</td>
+      <td>1.66</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>3.32</td>
+    </tr>
+    <tr>
+      <th>1447</th>
+      <td>536544</td>
+      <td>21790</td>
+      <td>VINTAGE SNAP CARDS</td>
+      <td>9</td>
+      <td>2010-12-01 14:32:00</td>
+      <td>1.66</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>14.94</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>541536</th>
+      <td>581498</td>
+      <td>85099B</td>
+      <td>JUMBO BAG RED RETROSPOT</td>
+      <td>5</td>
+      <td>2011-12-09 10:26:00</td>
+      <td>4.13</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>20.65</td>
+    </tr>
+    <tr>
+      <th>541537</th>
+      <td>581498</td>
+      <td>85099C</td>
+      <td>JUMBO  BAG BAROQUE BLACK WHITE</td>
+      <td>4</td>
+      <td>2011-12-09 10:26:00</td>
+      <td>4.13</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>16.52</td>
+    </tr>
+    <tr>
+      <th>541538</th>
+      <td>581498</td>
+      <td>85150</td>
+      <td>LADIES &amp; GENTLEMEN METAL SIGN</td>
+      <td>1</td>
+      <td>2011-12-09 10:26:00</td>
+      <td>4.96</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>4.96</td>
+    </tr>
+    <tr>
+      <th>541539</th>
+      <td>581498</td>
+      <td>85174</td>
+      <td>S/4 CACTI CANDLES</td>
+      <td>1</td>
+      <td>2011-12-09 10:26:00</td>
+      <td>10.79</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>10.79</td>
+    </tr>
+    <tr>
+      <th>541540</th>
+      <td>581498</td>
+      <td>DOT</td>
+      <td>DOTCOM POSTAGE</td>
+      <td>1</td>
+      <td>2011-12-09 10:26:00</td>
+      <td>1714.17</td>
+      <td>NaN</td>
+      <td>United Kingdom</td>
+      <td>1714.17</td>
+    </tr>
+  </tbody>
+</table>
+<p>132219 rows × 9 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Drop rows with missing values</span>
+<span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="o">.</span><span class="n">CustomerID</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
+
+<span class="c1">#check</span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">CustomerID</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>Country</th>
+      <th>TotalSum</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">##Change Datatypes</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int64&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="create-dataset-for-rfm-segmentation">
+<h1>Create dataset for RFM-Segmentation<a class="headerlink" href="#create-dataset-for-rfm-segmentation" title="Permalink to this headline">¶</a></h1>
+<p>In order to identify most relevant customers and other customer segments, we will cluster the customers based on RFM. It takes into account how current a customer is (Recency) and how often (Frequency) and much (Monetary Value) they buy.</p>
+<ul class="simple">
+<li><p>Receny: days since last purchase of each customer</p></li>
+<li><p>Frequency: Total number of orders per customer</p></li>
+<li><p>Monetary Value: Total amount spent by customer</p></li>
+</ul>
+<div class="section" id="calculation-rfm-features">
+<h2>Calculation RFM-Features<a class="headerlink" href="#calculation-rfm-features" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Preparation Attribute : Monetary Value</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;UnitPrice_total&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;UnitPrice&#39;</span><span class="p">]</span><span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Quantity&#39;</span><span class="p">]</span>
+
+<span class="c1">#Preparation Attribute: Recency</span>
+<span class="n">end_date</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="n">dt</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#Aggregation of data according to RFM</span>
+<span class="n">df_rfm</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span>
+    <span class="s1">&#39;InvoiceDate&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">end_date</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">())</span><span class="o">.</span><span class="n">days</span><span class="p">,</span> <span class="c1">#days since last order</span>
+    <span class="s1">&#39;InvoiceNo&#39;</span><span class="p">:</span>  <span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="c1">#total number of orders of a customer</span>
+    <span class="s1">&#39;UnitPrice_total&#39;</span><span class="p">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">})</span> <span class="c1">#total money spent by a customer</span>
+
+<span class="c1">#Rename Columns</span>
+<span class="n">df_rfm</span><span class="o">=</span><span class="n">df_rfm</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">:</span><span class="s1">&#39;Recency&#39;</span><span class="p">,</span> <span class="s1">&#39;InvoiceNo&#39;</span><span class="p">:</span><span class="s1">&#39;Frequency&#39;</span><span class="p">,</span> <span class="s1">&#39;UnitPrice_total&#39;</span><span class="p">:</span> <span class="s1">&#39;Monetary&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_rfm</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Recency</th>
+      <th>Frequency</th>
+      <th>Monetary</th>
+    </tr>
+    <tr>
+      <th>CustomerID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12346</th>
+      <td>326</td>
+      <td>1</td>
+      <td>77183.60</td>
+    </tr>
+    <tr>
+      <th>12347</th>
+      <td>2</td>
+      <td>182</td>
+      <td>4310.00</td>
+    </tr>
+    <tr>
+      <th>12348</th>
+      <td>75</td>
+      <td>31</td>
+      <td>1797.24</td>
+    </tr>
+    <tr>
+      <th>12349</th>
+      <td>19</td>
+      <td>73</td>
+      <td>1757.55</td>
+    </tr>
+    <tr>
+      <th>12350</th>
+      <td>310</td>
+      <td>17</td>
+      <td>334.40</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="data-exploration-before-clustering">
+<h1>Data Exploration before Clustering<a class="headerlink" href="#data-exploration-before-clustering" title="Permalink to this headline">¶</a></h1>
+<p>Before starting with the clustering we will take a closer look at our dataset. <br></br></p>
+<ul class="simple">
+<li><p>Some customer have bought just recently whereas the last purchase of another customer is more than a year ago. The average time between today and the last purchase of a customer is 92 days.</p></li>
+<li><p>All customers have at least bought 1 time. The great difference between the third quantile and the maximum indicates an outlier in the frequency column. It is unrealistic that a customer placed 7847 orders in approximately one year.</p></li>
+<li><p>The minimum amount spent by a customer is 3.75€ and the maximum is 280206 €, which indicates a heavy user or another data error.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_rfm</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Recency</th>
+      <th>Frequency</th>
+      <th>Monetary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>4338.000000</td>
+      <td>4338.000000</td>
+      <td>4338.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>92.536422</td>
+      <td>91.720609</td>
+      <td>2054.266460</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>100.014169</td>
+      <td>228.785094</td>
+      <td>8989.230441</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>3.750000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>18.000000</td>
+      <td>17.000000</td>
+      <td>307.415000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>51.000000</td>
+      <td>41.000000</td>
+      <td>674.485000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>142.000000</td>
+      <td>100.000000</td>
+      <td>1661.740000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>374.000000</td>
+      <td>7847.000000</td>
+      <td>280206.020000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="section" id="drop-outliers">
+<h2>Drop outliers<a class="headerlink" href="#drop-outliers" title="Permalink to this headline">¶</a></h2>
+<p>kMeans is very sensitive regarding outliers. Therefore, we should take a closer look at the high deviations and verify their authenticity. We define outliers as value, which are more than 3 standard deviations away from the mean.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Z-Score describes how many standard deviations a value is away from the mean</span>
+<span class="n">z_scores</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">df_rfm</span><span class="p">)</span>
+<span class="n">abs_z_scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z_scores</span><span class="p">)</span>
+<span class="n">filtered_entries</span> <span class="o">=</span> <span class="p">(</span><span class="n">abs_z_scores</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_rfm</span><span class="p">[</span><span class="o">~</span><span class="n">filtered_entries</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Recency</th>
+      <th>Frequency</th>
+      <th>Monetary</th>
+    </tr>
+    <tr>
+      <th>CustomerID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12346</th>
+      <td>326</td>
+      <td>1</td>
+      <td>77183.60</td>
+    </tr>
+    <tr>
+      <th>12415</th>
+      <td>24</td>
+      <td>714</td>
+      <td>124914.53</td>
+    </tr>
+    <tr>
+      <th>12748</th>
+      <td>1</td>
+      <td>4595</td>
+      <td>33719.73</td>
+    </tr>
+    <tr>
+      <th>12931</th>
+      <td>22</td>
+      <td>82</td>
+      <td>42055.96</td>
+    </tr>
+    <tr>
+      <th>13081</th>
+      <td>12</td>
+      <td>1024</td>
+      <td>28337.38</td>
+    </tr>
+    <tr>
+      <th>13089</th>
+      <td>3</td>
+      <td>1818</td>
+      <td>58825.83</td>
+    </tr>
+    <tr>
+      <th>13263</th>
+      <td>1</td>
+      <td>1677</td>
+      <td>7454.07</td>
+    </tr>
+    <tr>
+      <th>13694</th>
+      <td>4</td>
+      <td>568</td>
+      <td>65039.62</td>
+    </tr>
+    <tr>
+      <th>13798</th>
+      <td>1</td>
+      <td>349</td>
+      <td>37153.85</td>
+    </tr>
+    <tr>
+      <th>14056</th>
+      <td>1</td>
+      <td>1106</td>
+      <td>8214.65</td>
+    </tr>
+    <tr>
+      <th>14088</th>
+      <td>10</td>
+      <td>589</td>
+      <td>50491.81</td>
+    </tr>
+    <tr>
+      <th>14096</th>
+      <td>4</td>
+      <td>5111</td>
+      <td>65164.79</td>
+    </tr>
+    <tr>
+      <th>14156</th>
+      <td>10</td>
+      <td>1400</td>
+      <td>117379.63</td>
+    </tr>
+    <tr>
+      <th>14159</th>
+      <td>20</td>
+      <td>1204</td>
+      <td>4693.01</td>
+    </tr>
+    <tr>
+      <th>14298</th>
+      <td>8</td>
+      <td>1637</td>
+      <td>51527.30</td>
+    </tr>
+    <tr>
+      <th>14456</th>
+      <td>5</td>
+      <td>970</td>
+      <td>3062.40</td>
+    </tr>
+    <tr>
+      <th>14505</th>
+      <td>17</td>
+      <td>799</td>
+      <td>5905.64</td>
+    </tr>
+    <tr>
+      <th>14527</th>
+      <td>3</td>
+      <td>972</td>
+      <td>8508.82</td>
+    </tr>
+    <tr>
+      <th>14606</th>
+      <td>1</td>
+      <td>2700</td>
+      <td>12156.65</td>
+    </tr>
+    <tr>
+      <th>14646</th>
+      <td>2</td>
+      <td>2076</td>
+      <td>280206.02</td>
+    </tr>
+    <tr>
+      <th>14769</th>
+      <td>3</td>
+      <td>1090</td>
+      <td>10674.75</td>
+    </tr>
+    <tr>
+      <th>14796</th>
+      <td>1</td>
+      <td>1141</td>
+      <td>8022.49</td>
+    </tr>
+    <tr>
+      <th>14911</th>
+      <td>1</td>
+      <td>5675</td>
+      <td>143825.06</td>
+    </tr>
+    <tr>
+      <th>15005</th>
+      <td>16</td>
+      <td>1119</td>
+      <td>6316.57</td>
+    </tr>
+    <tr>
+      <th>15039</th>
+      <td>10</td>
+      <td>1502</td>
+      <td>19914.44</td>
+    </tr>
+    <tr>
+      <th>15061</th>
+      <td>4</td>
+      <td>403</td>
+      <td>54534.14</td>
+    </tr>
+    <tr>
+      <th>15098</th>
+      <td>182</td>
+      <td>3</td>
+      <td>39916.50</td>
+    </tr>
+    <tr>
+      <th>15311</th>
+      <td>1</td>
+      <td>2379</td>
+      <td>60767.90</td>
+    </tr>
+    <tr>
+      <th>15555</th>
+      <td>12</td>
+      <td>899</td>
+      <td>4805.17</td>
+    </tr>
+    <tr>
+      <th>15719</th>
+      <td>33</td>
+      <td>937</td>
+      <td>5045.61</td>
+    </tr>
+    <tr>
+      <th>15749</th>
+      <td>235</td>
+      <td>10</td>
+      <td>44534.30</td>
+    </tr>
+    <tr>
+      <th>15769</th>
+      <td>7</td>
+      <td>130</td>
+      <td>56252.72</td>
+    </tr>
+    <tr>
+      <th>15838</th>
+      <td>11</td>
+      <td>167</td>
+      <td>33643.08</td>
+    </tr>
+    <tr>
+      <th>16013</th>
+      <td>4</td>
+      <td>139</td>
+      <td>37130.60</td>
+    </tr>
+    <tr>
+      <th>16029</th>
+      <td>39</td>
+      <td>242</td>
+      <td>81024.84</td>
+    </tr>
+    <tr>
+      <th>16033</th>
+      <td>6</td>
+      <td>1137</td>
+      <td>8816.40</td>
+    </tr>
+    <tr>
+      <th>16422</th>
+      <td>17</td>
+      <td>369</td>
+      <td>34684.40</td>
+    </tr>
+    <tr>
+      <th>16446</th>
+      <td>1</td>
+      <td>3</td>
+      <td>168472.50</td>
+    </tr>
+    <tr>
+      <th>16549</th>
+      <td>10</td>
+      <td>981</td>
+      <td>4154.64</td>
+    </tr>
+    <tr>
+      <th>16684</th>
+      <td>4</td>
+      <td>277</td>
+      <td>66653.56</td>
+    </tr>
+    <tr>
+      <th>16931</th>
+      <td>5</td>
+      <td>898</td>
+      <td>4604.22</td>
+    </tr>
+    <tr>
+      <th>17389</th>
+      <td>1</td>
+      <td>213</td>
+      <td>31833.68</td>
+    </tr>
+    <tr>
+      <th>17404</th>
+      <td>4</td>
+      <td>198</td>
+      <td>31906.82</td>
+    </tr>
+    <tr>
+      <th>17450</th>
+      <td>8</td>
+      <td>337</td>
+      <td>194550.79</td>
+    </tr>
+    <tr>
+      <th>17511</th>
+      <td>3</td>
+      <td>963</td>
+      <td>91062.38</td>
+    </tr>
+    <tr>
+      <th>17811</th>
+      <td>4</td>
+      <td>851</td>
+      <td>7837.73</td>
+    </tr>
+    <tr>
+      <th>17841</th>
+      <td>2</td>
+      <td>7847</td>
+      <td>40991.57</td>
+    </tr>
+    <tr>
+      <th>17949</th>
+      <td>1</td>
+      <td>70</td>
+      <td>58510.48</td>
+    </tr>
+    <tr>
+      <th>18102</th>
+      <td>1</td>
+      <td>431</td>
+      <td>259657.30</td>
+    </tr>
+    <tr>
+      <th>18118</th>
+      <td>11</td>
+      <td>1279</td>
+      <td>5653.82</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>The outliers mainly result from Frequency and Monetary value. The Frequency has very high values. It is unrealistic, that a customer really ordered 7847 times during one year.The average Monetary value of these customers is very high. <br></br>
+In a real project, we would have to talk again to the data owners. For our further procedure, we will remove these outliers, as we fear, that they would distort the result.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_rfm</span><span class="o">=</span><span class="n">df_rfm</span><span class="p">[</span><span class="n">filtered_entries</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="data-pre-processing-before-clustering">
+<h1>Data Pre-Processing before Clustering<a class="headerlink" href="#data-pre-processing-before-clustering" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="check-distribution-of-the-columns">
+<h2>Check distribution of the columns<a class="headerlink" href="#check-distribution-of-the-columns" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_rfm</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Clustering_Marketing_41_0.png" src="_images/Clustering_Marketing_41_0.png" />
+</div>
+</div>
+<p>The distribution of the variables are not symmetrical as we have extreme values on the right side of the distribution even though we removed the outliers. Furthermore, the three columns have different ranges and units. Therefore, further data preprocessing is needed for kMeans Clustering.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="clustering-with-kmeans">
+<h1>Clustering with kMeans<a class="headerlink" href="#clustering-with-kmeans" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="data-cleaning-before-clustering">
+<h2>Data Cleaning before Clustering<a class="headerlink" href="#data-cleaning-before-clustering" title="Permalink to this headline">¶</a></h2>
+<p>kMeans expects symmetrical data. Therefore, we need to log (normalize data) and standardize the data before the segmentation.</p>
+<div class="section" id="normalize-data">
+<h3>Normalize data<a class="headerlink" href="#normalize-data" title="Permalink to this headline">¶</a></h3>
+<p>Goal of normalization is to change the values of numeric columns in the dataset to a common scale, without distorting differences in the ranges of values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copy original to new df</span>
+<span class="n">df_rfm_log</span> <span class="o">=</span> <span class="n">df_rfm</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Transform skewed data with log transformation</span>
+<span class="n">df_rfm_log</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">df_rfm_log</span><span class="p">)</span>
+
+<span class="n">df_rfm_log</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Recency</th>
+      <th>Frequency</th>
+      <th>Monetary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>4288.000000</td>
+      <td>4288.000000</td>
+      <td>4288.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>3.791201</td>
+      <td>3.650075</td>
+      <td>6.547977</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1.415382</td>
+      <td>1.289776</td>
+      <td>1.196777</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.321756</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.890372</td>
+      <td>2.833213</td>
+      <td>5.722661</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>3.951244</td>
+      <td>3.713572</td>
+      <td>6.495998</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>4.969813</td>
+      <td>4.584967</td>
+      <td>7.381083</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>5.924256</td>
+      <td>6.628041</td>
+      <td>10.270989</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot df_rfm_log again</span>
+<span class="n">df_rfm_log</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">();</span>
+<span class="n">df_rfm_log</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Recency</th>
+      <th>Frequency</th>
+      <th>Monetary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>4288.000000</td>
+      <td>4288.000000</td>
+      <td>4288.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>3.791201</td>
+      <td>3.650075</td>
+      <td>6.547977</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1.415382</td>
+      <td>1.289776</td>
+      <td>1.196777</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.321756</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.890372</td>
+      <td>2.833213</td>
+      <td>5.722661</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>3.951244</td>
+      <td>3.713572</td>
+      <td>6.495998</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>4.969813</td>
+      <td>4.584967</td>
+      <td>7.381083</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>5.924256</td>
+      <td>6.628041</td>
+      <td>10.270989</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><img alt="_images/Clustering_Marketing_45_1.png" src="_images/Clustering_Marketing_45_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="standardize-data">
+<h3>Standardize data<a class="headerlink" href="#standardize-data" title="Permalink to this headline">¶</a></h3>
+<p>Standardizing is important when working with variables with different units. Variables that are measured at different scales do not contribute equally to the analysis. Therefore, standardization distributes the feature around the center 0 with a standard deviation of 1.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+
+<span class="c1"># fit_transform</span>
+<span class="n">df_rfm_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_rfm_log</span><span class="p">)</span>
+
+<span class="c1">#transform to dataframe</span>
+<span class="n">df_rfm_scaled</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_rfm_log</span><span class="p">)</span>
+<span class="n">df_rfm_scaled</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Recency&#39;</span><span class="p">,</span> <span class="s1">&#39;Frequency&#39;</span><span class="p">,</span> <span class="s1">&#39;Monetary&#39;</span><span class="p">]</span>
+<span class="n">df_rfm_scaled</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Recency</th>
+      <th>Frequency</th>
+      <th>Monetary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>4288.000000</td>
+      <td>4288.000000</td>
+      <td>4288.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>3.791201</td>
+      <td>3.650075</td>
+      <td>6.547977</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1.415382</td>
+      <td>1.289776</td>
+      <td>1.196777</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.321756</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.890372</td>
+      <td>2.833213</td>
+      <td>5.722661</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>3.951244</td>
+      <td>3.713572</td>
+      <td>6.495998</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>4.969813</td>
+      <td>4.584967</td>
+      <td>7.381083</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>5.924256</td>
+      <td>6.628041</td>
+      <td>10.270989</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_rfm_scaled</span><span class="o">.</span><span class="n">boxplot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+</pre></div>
+</div>
+<img alt="_images/Clustering_Marketing_48_1.png" src="_images/Clustering_Marketing_48_1.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="find-perfect-number-of-k-with-silhouette-analysis">
+<h2>Find perfect number of k with silhouette Analysis<a class="headerlink" href="#find-perfect-number-of-k-with-silhouette-analysis" title="Permalink to this headline">¶</a></h2>
+<p>The silhouette plot displays a measure of how close each point in one cluster is to points in the neighboring clusters and thus provides a way to assess parameters like number of clusters visually. Silhouette coefficients near +1 indicate that the sample is far away from the neighboring clusters whereas coefficients near 0 indicate that the sample is near to another cluster.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import necessary libraries</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">make_blobs</span>
+<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">silhouette_samples</span><span class="p">,</span> <span class="n">silhouette_score</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="k">as</span> <span class="nn">cm</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Save features as array</span>
+<span class="n">X</span><span class="o">=</span><span class="n">df_rfm_scaled</span><span class="p">[[</span><span class="s1">&#39;Recency&#39;</span><span class="p">,</span> <span class="s1">&#39;Frequency&#39;</span><span class="p">,</span> <span class="s1">&#39;Monetary&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">range_n_clusters</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">n_clusters</span> <span class="ow">in</span> <span class="n">range_n_clusters</span><span class="p">:</span>
+    <span class="c1"># Create a subplot with 1 row and 2 columns</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">set_size_inches</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+
+    <span class="c1"># The 1st subplot is the silhouette plot</span>
+    <span class="c1"># The silhouette coefficient can range from -1, 1 but in this example all</span>
+    <span class="c1"># lie within [-0.1, 1]</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+    <span class="c1"># The (n_clusters+1)*10 is for inserting blank space between silhouette</span>
+    <span class="c1"># plots of individual clusters, to demarcate them clearly.</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">n_clusters</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">10</span><span class="p">])</span>
+
+    <span class="c1"># Initialize the clusterer with n_clusters value and a random generator</span>
+    <span class="c1"># seed of 10 for reproducibility.</span>
+    <span class="n">clusterer</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">n_clusters</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">cluster_labels</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="c1"># The silhouette_score gives the average value for all the samples.</span>
+    <span class="c1"># This gives a perspective into the density and separation of the formed</span>
+    <span class="c1"># clusters</span>
+    <span class="n">silhouette_avg</span> <span class="o">=</span> <span class="n">silhouette_score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">cluster_labels</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="s2">&quot;For n_clusters =&quot;</span><span class="p">,</span>
+        <span class="n">n_clusters</span><span class="p">,</span>
+        <span class="s2">&quot;The average silhouette_score is :&quot;</span><span class="p">,</span>
+        <span class="n">silhouette_avg</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Compute the silhouette scores for each sample --&gt; hier alle 3 Feature als Array übergeben</span>
+    <span class="n">sample_silhouette_values</span> <span class="o">=</span> <span class="n">silhouette_samples</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">cluster_labels</span><span class="p">)</span>
+
+    <span class="n">y_lower</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_clusters</span><span class="p">):</span>
+        <span class="c1"># Aggregate the silhouette scores for samples belonging to</span>
+        <span class="c1"># cluster i, and sort them</span>
+        <span class="n">ith_cluster_silhouette_values</span> <span class="o">=</span> <span class="n">sample_silhouette_values</span><span class="p">[</span><span class="n">cluster_labels</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+
+        <span class="n">ith_cluster_silhouette_values</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+
+        <span class="n">size_cluster_i</span> <span class="o">=</span> <span class="n">ith_cluster_silhouette_values</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">y_upper</span> <span class="o">=</span> <span class="n">y_lower</span> <span class="o">+</span> <span class="n">size_cluster_i</span>
+
+        <span class="n">color</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">nipy_spectral</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_clusters</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">fill_betweenx</span><span class="p">(</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">y_lower</span><span class="p">,</span> <span class="n">y_upper</span><span class="p">),</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="n">ith_cluster_silhouette_values</span><span class="p">,</span>
+            <span class="n">facecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span>
+            <span class="n">edgecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span>
+            <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Label the silhouette plots with their cluster numbers at the middle</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">y_lower</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">size_cluster_i</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+
+        <span class="c1"># Compute the new y_lower for next plot</span>
+        <span class="n">y_lower</span> <span class="o">=</span> <span class="n">y_upper</span> <span class="o">+</span> <span class="mi">10</span>  <span class="c1"># 10 for the 0 samples</span>
+
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;The silhouette plot for the various clusters.&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;The silhouette coefficient values&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Cluster label&quot;</span><span class="p">)</span>
+
+    <span class="c1"># The vertical line for average silhouette score of all the values</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">silhouette_avg</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>  <span class="c1"># Clear the yaxis labels / ticks</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+
+    <span class="c1"># 2nd Plot showing the actual clusters formed --&gt; alle 3 labels als Array X übergeben</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">nipy_spectral</span><span class="p">(</span><span class="n">cluster_labels</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_clusters</span><span class="p">)</span>
+    <span class="n">fig_k2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+    
+
+
+    <span class="c1"># Labeling the clusters</span>
+    <span class="n">centers</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">cluster_centers_</span>
+    <span class="c1"># Draw white circles at cluster centers</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+        <span class="n">centers</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="n">centers</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="n">centers</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">],</span>
+        <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span>
+        <span class="n">c</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+        <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">s</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+        <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">centers</span><span class="p">):</span>
+        <span class="c1">#define 3 axes</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+
+    
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;The visualization of the clustered data.&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Feature space for the 1st feature&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Feature space for the 2nd feature&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s2">&quot;Feature space for the 3nd feature&quot;</span><span class="p">)</span>
+    
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+        <span class="s2">&quot;Silhouette analysis for KMeans clustering on sample data with n_clusters = </span><span class="si">%d</span><span class="s2">&quot;</span>
+        <span class="o">%</span> <span class="n">n_clusters</span><span class="p">,</span>
+        <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+        <span class="n">fontweight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For n_clusters = 2 The average silhouette_score is : 0.39223712647024095
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For n_clusters = 3 The average silhouette_score is : 0.29929919908769337
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For n_clusters = 4 The average silhouette_score is : 0.3073418518723958
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For n_clusters = 5 The average silhouette_score is : 0.28481111540953846
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For n_clusters = 6 The average silhouette_score is : 0.28352049778862143
+</pre></div>
+</div>
+<img alt="_images/Clustering_Marketing_52_5.png" src="_images/Clustering_Marketing_52_5.png" />
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/Clustering_Marketing_52_7.png" src="_images/Clustering_Marketing_52_7.png" />
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/Clustering_Marketing_52_9.png" src="_images/Clustering_Marketing_52_9.png" />
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/Clustering_Marketing_52_11.png" src="_images/Clustering_Marketing_52_11.png" />
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/Clustering_Marketing_52_13.png" src="_images/Clustering_Marketing_52_13.png" />
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<p>In the best case the coefficient should be rectangular. In our case, the plots become sharper as the number of clusters (k) increases. The pointed plot means, that more points are below the average distance and thus close to another cluster. Partly the coefficients show even negative values, which means, that these samples should have been assigned to another cluster.
+From this we conclude that kMeans is less suitable for clustering the data. Nevertheless, we will perform a kMeans clustering with k=2 for comparison with hierarchical clustering, as this still achieves the best silhouette score.</p>
+</div>
+<div class="section" id="performing-kmeans-clustering">
+<h2>Performing kMeans Clustering<a class="headerlink" href="#performing-kmeans-clustering" title="Permalink to this headline">¶</a></h2>
+<p>We will use the normalized and standardized dataset for kMeans Clustering. In order to compare the different cluster segments and derive first insights we will visualize their characteristics in a plot. The function <strong>snake_plot</strong> creates a plot, which shows how high the respective values for Recency, Frequency and Monetary Value are in each group.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">snake_plot</span><span class="p">(</span><span class="n">normalised_df_rfm</span><span class="p">,</span> <span class="n">df_rfm_kmeans</span><span class="p">,</span> <span class="n">df_rfm_original</span><span class="p">):</span>
+    <span class="c1"># Transform df_normal as df and add cluster column</span>
+    <span class="n">normalised_df_rfm</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">normalised_df_rfm</span><span class="p">,</span> 
+                                       <span class="n">index</span><span class="o">=</span><span class="n">df_rfm</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> 
+                                       <span class="n">columns</span><span class="o">=</span><span class="n">df_rfm</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+    <span class="n">normalised_df_rfm</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_rfm_kmeans</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Melt data into long format</span>
+    <span class="n">df_melt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">normalised_df_rfm</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(),</span> 
+                        <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">,</span> <span class="s1">&#39;Cluster&#39;</span><span class="p">],</span>
+                        <span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Recency&#39;</span><span class="p">,</span> <span class="s1">&#39;Frequency&#39;</span><span class="p">,</span> <span class="s1">&#39;Monetary&#39;</span><span class="p">],</span> 
+                        <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Metric&#39;</span><span class="p">,</span> 
+                        <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Value&#39;</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Metric&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Value&#39;</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">pointplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_melt</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Metric&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Value&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Cluster&#39;</span><span class="p">)</span>
+    
+    <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="k-2">
+<h3>k = 2<a class="headerlink" href="#k-2" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#fitting the data</span>
+<span class="n">kmeans_k2</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">kmeans_k2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>KMeans(n_clusters=2)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#predict cluster and add to dataframe</span>
+<span class="n">df_rfm_k2</span><span class="o">=</span><span class="n">df_rfm_scaled</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_rfm_k2</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">kmeans_k2</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create 3D-plot</span>
+<span class="n">fig_k2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig_k2</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+<span class="c1">#define 3 axes</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">df_rfm_k2</span><span class="p">[</span><span class="s1">&#39;Recency&#39;</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_rfm_k2</span><span class="p">[</span><span class="s1">&#39;Frequency&#39;</span><span class="p">]</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">df_rfm_k2</span><span class="p">[</span><span class="s1">&#39;Monetary&#39;</span><span class="p">]</span>
+
+<span class="c1">#Labels for axes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Recency&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s2">&quot;Monetary&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">df_rfm_k2</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;mpl_toolkits.mplot3d.art3d.Path3DCollection at 0x7ff95be22c10&gt;
+</pre></div>
+</div>
+<img alt="_images/Clustering_Marketing_59_1.png" src="_images/Clustering_Marketing_59_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Show means and count of each column</span>
+<span class="n">df_rfm_k2</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Cluster&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span>
+        <span class="s1">&#39;Recency&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Frequency&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Monetary&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">]</span>
+    <span class="p">})</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Recency</th>
+      <th>Frequency</th>
+      <th colspan="2" halign="left">Monetary</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>mean</th>
+      <th>mean</th>
+      <th>mean</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Cluster</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>2379</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>7.0</td>
+      <td>1909</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">snake_plot</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">,</span> <span class="n">df_rfm_k2</span><span class="p">,</span> <span class="n">df_rfm</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Clustering_Marketing_61_0.png" src="_images/Clustering_Marketing_61_0.png" />
+</div>
+</div>
+<p>The two clusters show differences in the snake and 3D-plot. However, dividing the customers in only 2 groups gives a less detailed picture about the customer base. Also the scatter plot doesn’t show a significant difference between those two groups.</p>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="hierarchical-clustering">
+<h1>Hierarchical Clustering<a class="headerlink" href="#hierarchical-clustering" title="Permalink to this headline">¶</a></h1>
+<p>Since we are not yet satisfied with the results of the KMeans clustering, we try to see if we can achieve a better result with hierarchical clustering. We will also use the standardizes data <em>(df_rfm_scaled)</em> as our basis.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">AgglomerativeClustering</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Dendogramm</span>
+<span class="kn">from</span> <span class="nn">scipy.cluster</span> <span class="kn">import</span> <span class="n">hierarchy</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Dendrogramm&quot;</span><span class="p">)</span>
+
+<span class="n">Z</span> <span class="o">=</span> <span class="n">hierarchy</span><span class="o">.</span><span class="n">linkage</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">,</span> <span class="s1">&#39;ward&#39;</span><span class="p">)</span>
+<span class="n">dn</span> <span class="o">=</span> <span class="n">hierarchy</span><span class="o">.</span><span class="n">dendrogram</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">df_rfm_scaled</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;dendrogram.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error in callback &lt;function flush_figures at 0x7ff96cc9a4d0&gt; (for post_execute):
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib_inline/backend_inline.py</span> in <span class="ni">flush_figures</span><span class="nt">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">119</span>         <span class="c1"># ignore the tracking, just draw and close all figures</span>
+<span class="g g-Whitespace">    </span><span class="mi">120</span>         <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">121</span>             <span class="k">return</span> <span class="n">show</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span>         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>             <span class="c1"># safely show traceback if in IPython, else raise</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib_inline/backend_inline.py</span> in <span class="ni">show</span><span class="nt">(close, block)</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span>             <span class="n">display</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span>                 <span class="n">figure_manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span>
+<span class="ne">---&gt; </span><span class="mi">43</span>                 <span class="n">metadata</span><span class="o">=</span><span class="n">_fetch_figure_metadata</span><span class="p">(</span><span class="n">figure_manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">figure</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span>             <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">45</span>     <span class="k">finally</span><span class="p">:</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/display.py</span> in <span class="ni">display</span><span class="nt">(include, exclude, metadata, transient, display_id, *objs, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">318</span>             <span class="n">publish_display_data</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">obj</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">319</span>         <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">320</span>             <span class="n">format_dict</span><span class="p">,</span> <span class="n">md_dict</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="n">exclude</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">321</span>             <span class="k">if</span> <span class="ow">not</span> <span class="n">format_dict</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">322</span>                 <span class="c1"># nothing to display (e.g. _ipython_display_ took over)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/formatters.py</span> in <span class="ni">format</span><span class="nt">(self, obj, include, exclude)</span>
+<span class="g g-Whitespace">    </span><span class="mi">178</span>             <span class="n">md</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">179</span>             <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">180</span>                 <span class="n">data</span> <span class="o">=</span> <span class="n">formatter</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">181</span>             <span class="k">except</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">182</span>                 <span class="c1"># FIXME: log the exception</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/decorator.py</span> in <span class="ni">fun</span><span class="nt">(*args, **kw)</span>
+<span class="g g-Whitespace">    </span><span class="mi">230</span>             <span class="k">if</span> <span class="ow">not</span> <span class="n">kwsyntax</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">231</span>                 <span class="n">args</span><span class="p">,</span> <span class="n">kw</span> <span class="o">=</span> <span class="n">fix</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">232</span>             <span class="k">return</span> <span class="n">caller</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">extras</span> <span class="o">+</span> <span class="n">args</span><span class="p">),</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">233</span>     <span class="n">fun</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span>
+<span class="g g-Whitespace">    </span><span class="mi">234</span>     <span class="n">fun</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__doc__</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/formatters.py</span> in <span class="ni">catch_format_error</span><span class="nt">(method, self, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">222</span>     <span class="sd">&quot;&quot;&quot;show traceback on failed format call&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">223</span>     <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">224</span>         <span class="n">r</span> <span class="o">=</span> <span class="n">method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">225</span>     <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">226</span>         <span class="c1"># don&#39;t warn on NotImplementedErrors</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/formatters.py</span> in <span class="ni">__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">339</span>                 <span class="k">pass</span>
+<span class="g g-Whitespace">    </span><span class="mi">340</span>             <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">341</span>                 <span class="k">return</span> <span class="n">printer</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">342</span>             <span class="c1"># Finally look for special method names</span>
+<span class="g g-Whitespace">    </span><span class="mi">343</span>             <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/pylabtools.py</span> in <span class="ni">&lt;lambda&gt;</span><span class="nt">(fig)</span>
+<span class="g g-Whitespace">    </span><span class="mi">251</span> 
+<span class="g g-Whitespace">    </span><span class="mi">252</span>     <span class="k">if</span> <span class="s1">&#39;png&#39;</span> <span class="ow">in</span> <span class="n">formats</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">253</span>         <span class="n">png_formatter</span><span class="o">.</span><span class="n">for_type</span><span class="p">(</span><span class="n">Figure</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">fig</span><span class="p">:</span> <span class="n">print_figure</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">254</span>     <span class="k">if</span> <span class="s1">&#39;retina&#39;</span> <span class="ow">in</span> <span class="n">formats</span> <span class="ow">or</span> <span class="s1">&#39;png2x&#39;</span> <span class="ow">in</span> <span class="n">formats</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">255</span>         <span class="n">png_formatter</span><span class="o">.</span><span class="n">for_type</span><span class="p">(</span><span class="n">Figure</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">fig</span><span class="p">:</span> <span class="n">retina_figure</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/IPython/core/pylabtools.py</span> in <span class="ni">print_figure</span><span class="nt">(fig, fmt, bbox_inches, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">135</span>         <span class="n">FigureCanvasBase</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span> 
+<span class="ne">--&gt; </span><span class="mi">137</span>     <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">print_figure</span><span class="p">(</span><span class="n">bytes_io</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">bytes_io</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span>     <span class="k">if</span> <span class="n">fmt</span> <span class="o">==</span> <span class="s1">&#39;svg&#39;</span><span class="p">:</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/backend_bases.py</span> in <span class="ni">print_figure</span><span class="nt">(self, filename, dpi, facecolor, edgecolor, orientation, format, bbox_inches, pad_inches, bbox_extra_artists, backend, **kwargs)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2293</span>                 <span class="k">if</span> <span class="n">bbox_inches</span> <span class="o">==</span> <span class="s2">&quot;tight&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2294</span>                     <span class="n">bbox_inches</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">get_tightbbox</span><span class="p">(</span>
+<span class="ne">-&gt; </span><span class="mi">2295</span>                         <span class="n">renderer</span><span class="p">,</span> <span class="n">bbox_extra_artists</span><span class="o">=</span><span class="n">bbox_extra_artists</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2296</span>                     <span class="k">if</span> <span class="n">pad_inches</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2297</span>                         <span class="n">pad_inches</span> <span class="o">=</span> <span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;savefig.pad_inches&#39;</span><span class="p">]</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/figure.py</span> in <span class="ni">get_tightbbox</span><span class="nt">(self, renderer, bbox_extra_artists)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1636</span>                 <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1637</span>                     <span class="n">bbox</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_tightbbox</span><span class="p">(</span>
+<span class="ne">-&gt; </span><span class="mi">1638</span>                         <span class="n">renderer</span><span class="p">,</span> <span class="n">bbox_extra_artists</span><span class="o">=</span><span class="n">bbox_extra_artists</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1639</span>                 <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1640</span>                     <span class="n">bbox</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_tightbbox</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/axes/_base.py</span> in <span class="ni">get_tightbbox</span><span class="nt">(self, renderer, call_axes_locator, bbox_extra_artists, for_layout_only)</span>
+<span class="g g-Whitespace">   </span><span class="mi">4619</span>                 <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">4620</span>                     <span class="n">bb_yaxis</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">get_tightbbox</span><span class="p">(</span>
+<span class="ne">-&gt; </span><span class="mi">4621</span>                         <span class="n">renderer</span><span class="p">,</span> <span class="n">for_layout_only</span><span class="o">=</span><span class="n">for_layout_only</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">4622</span>                 <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">4623</span>                     <span class="c1"># in case downstream library has redefined axis:</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/axis.py</span> in <span class="ni">get_tightbbox</span><span class="nt">(self, renderer, for_layout_only)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1103</span>         <span class="n">ticks_to_draw</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_ticks</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1104</span> 
+<span class="ne">-&gt; </span><span class="mi">1105</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_label_position</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1106</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1107</span>         <span class="c1"># go back to just this axis&#39;s tick labels</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/axis.py</span> in <span class="ni">_update_label_position</span><span class="nt">(self, renderer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2350</span>         <span class="c1"># get bounding boxes for this axis and any siblings</span>
+<span class="g g-Whitespace">   </span><span class="mi">2351</span>         <span class="c1"># that have been set by `fig.align_ylabels()`</span>
+<span class="ne">-&gt; </span><span class="mi">2352</span>         <span class="n">bboxes</span><span class="p">,</span> <span class="n">bboxes2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_tick_boxes_siblings</span><span class="p">(</span><span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2353</span> 
+<span class="g g-Whitespace">   </span><span class="mi">2354</span>         <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">get_position</span><span class="p">()</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/axis.py</span> in <span class="ni">_get_tick_boxes_siblings</span><span class="nt">(self, renderer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>             <span class="n">axis</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">axis_name</span><span class="si">}</span><span class="s2">axis&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1880</span>             <span class="n">ticks_to_draw</span> <span class="o">=</span> <span class="n">axis</span><span class="o">.</span><span class="n">_update_ticks</span><span class="p">()</span>
+<span class="ne">-&gt; </span><span class="mi">1881</span>             <span class="n">tlb</span><span class="p">,</span> <span class="n">tlb2</span> <span class="o">=</span> <span class="n">axis</span><span class="o">.</span><span class="n">_get_tick_bboxes</span><span class="p">(</span><span class="n">ticks_to_draw</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>             <span class="n">bboxes</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">tlb</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>             <span class="n">bboxes2</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">tlb2</span><span class="p">)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/axis.py</span> in <span class="ni">_get_tick_bboxes</span><span class="nt">(self, ticks, renderer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1084</span>         <span class="sd">&quot;&quot;&quot;Return lists of bboxes for ticks&#39; label1&#39;s and label2&#39;s.&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1085</span>         <span class="k">return</span> <span class="p">([</span><span class="n">tick</span><span class="o">.</span><span class="n">label1</span><span class="o">.</span><span class="n">get_window_extent</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1086</span>                  <span class="k">for</span> <span class="n">tick</span> <span class="ow">in</span> <span class="n">ticks</span> <span class="k">if</span> <span class="n">tick</span><span class="o">.</span><span class="n">label1</span><span class="o">.</span><span class="n">get_visible</span><span class="p">()],</span>
+<span class="g g-Whitespace">   </span><span class="mi">1087</span>                 <span class="p">[</span><span class="n">tick</span><span class="o">.</span><span class="n">label2</span><span class="o">.</span><span class="n">get_window_extent</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="nn">   1088                  for tick</span> in <span class="ni">ticks if tick.label2.get_visible</span><span class="nt">()])</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/axis.py</span> in <span class="ni">&lt;listcomp&gt;</span><span class="nt">(.0)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1084</span>         <span class="sd">&quot;&quot;&quot;Return lists of bboxes for ticks&#39; label1&#39;s and label2&#39;s.&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1085</span>         <span class="k">return</span> <span class="p">([</span><span class="n">tick</span><span class="o">.</span><span class="n">label1</span><span class="o">.</span><span class="n">get_window_extent</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1086</span>                  <span class="k">for</span> <span class="n">tick</span> <span class="ow">in</span> <span class="n">ticks</span> <span class="k">if</span> <span class="n">tick</span><span class="o">.</span><span class="n">label1</span><span class="o">.</span><span class="n">get_visible</span><span class="p">()],</span>
+<span class="g g-Whitespace">   </span><span class="mi">1087</span>                 <span class="p">[</span><span class="n">tick</span><span class="o">.</span><span class="n">label2</span><span class="o">.</span><span class="n">get_window_extent</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="nn">   1088                  for tick</span> in <span class="ni">ticks if tick.label2.get_visible</span><span class="nt">()])</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/text.py</span> in <span class="ni">get_window_extent</span><span class="nt">(self, renderer, dpi)</span>
+<span class="g g-Whitespace">    </span><span class="mi">908</span> 
+<span class="g g-Whitespace">    </span><span class="mi">909</span>         <span class="k">with</span> <span class="n">cbook</span><span class="o">.</span><span class="n">_setattr_cm</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">910</span>             <span class="n">bbox</span><span class="p">,</span> <span class="n">info</span><span class="p">,</span> <span class="n">descent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_layout</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">911</span>             <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unitless_position</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">912</span>             <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_transform</span><span class="p">()</span><span class="o">.</span><span class="n">transform</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/matplotlib/text.py</span> in <span class="ni">_get_layout</span><span class="nt">(self, renderer)</span>
+<span class="g g-Whitespace">    </span><span class="mi">376</span>         <span class="n">corners_rotated</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">corners_horiz</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">377</span>         <span class="c1"># compute the bounds of the rotated box</span>
+<span class="ne">--&gt; </span><span class="mi">378</span>         <span class="n">xmin</span> <span class="o">=</span> <span class="n">corners_rotated</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">379</span>         <span class="n">xmax</span> <span class="o">=</span> <span class="n">corners_rotated</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">380</span>         <span class="n">ymin</span> <span class="o">=</span> <span class="n">corners_rotated</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hierarchical clustering connects objects that have a smaller distance to each other than to the objects of other clusters. The longer the lines in the dendogram, the more the elements that are merged differ. Therefore, the dendogram suggests a cluster of 3 to 4 clusters, which would already give a more detailed picture about our customer base than the kMeans clustering with k=2.</p>
+<div class="section" id="n-3">
+<h2>n=3<a class="headerlink" href="#n-3" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Define agglomerative cluster algorithm (=bottom--&gt;up)</span>
+<span class="n">ward</span> <span class="o">=</span> <span class="n">AgglomerativeClustering</span><span class="p">(</span><span class="n">linkage</span><span class="o">=</span><span class="s1">&#39;ward&#39;</span><span class="p">,</span> <span class="n">affinity</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ward</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AgglomerativeClustering(n_clusters=3)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#apply on dataset and add cluster</span>
+<span class="n">df_rfm_h3</span><span class="o">=</span><span class="n">df_rfm_scaled</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_rfm_h3</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">ward</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_h3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig_h3</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+<span class="c1">#define axes</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">df_rfm_h3</span><span class="p">[</span><span class="s1">&#39;Recency&#39;</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_rfm_h3</span><span class="p">[</span><span class="s1">&#39;Frequency&#39;</span><span class="p">]</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">df_rfm_h3</span><span class="p">[</span><span class="s1">&#39;Monetary&#39;</span><span class="p">]</span>
+
+<span class="c1">#Labels for axes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Recency&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s2">&quot;Monetary&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">df_rfm_h3</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;mpl_toolkits.mplot3d.art3d.Path3DCollection at 0x7fdfe2df6a10&gt;
+</pre></div>
+</div>
+<img alt="_images/Clustering_Marketing_70_1.png" src="_images/Clustering_Marketing_70_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># show mean and count of each cluster</span>
+<span class="n">df_rfm_h3</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Cluster&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span>
+        <span class="s1">&#39;Recency&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Frequency&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Monetary&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">]</span>
+    <span class="p">})</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Recency</th>
+      <th>Frequency</th>
+      <th colspan="2" halign="left">Monetary</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>mean</th>
+      <th>mean</th>
+      <th>mean</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Cluster</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>7.0</td>
+      <td>2361</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5.0</td>
+      <td>2.0</td>
+      <td>6.0</td>
+      <td>1207</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>8.0</td>
+      <td>720</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">snake_plot</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">,</span> <span class="n">df_rfm_h3</span><span class="p">,</span> <span class="n">df_rfm</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Clustering_Marketing_72_0.png" src="_images/Clustering_Marketing_72_0.png" />
+</div>
+</div>
+<p>The three clusters show different characteristics and differentiate in their means. There differences can also be very well seen in the snake plot.</p>
+</div>
+<div class="section" id="n-4">
+<h2>n=4<a class="headerlink" href="#n-4" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ward</span> <span class="o">=</span> <span class="n">AgglomerativeClustering</span><span class="p">(</span><span class="n">linkage</span><span class="o">=</span><span class="s1">&#39;ward&#39;</span><span class="p">,</span> <span class="n">affinity</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">ward</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AgglomerativeClustering(n_clusters=4)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#perform segmentation</span>
+<span class="n">df_rfm_h4</span><span class="o">=</span><span class="n">df_rfm_scaled</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_rfm_h4</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">ward</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig_h4</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig_h4</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+<span class="c1">#add axes</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_rfm_h4</span><span class="p">[</span><span class="s1">&#39;Recency&#39;</span><span class="p">])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_rfm_h4</span><span class="p">[</span><span class="s1">&#39;Frequency&#39;</span><span class="p">])</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_rfm_h4</span><span class="p">[</span><span class="s1">&#39;Monetary&#39;</span><span class="p">])</span>
+
+<span class="c1">#Labels for axes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Recency&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s2">&quot;Monetary&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">df_rfm_h4</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;mpl_toolkits.mplot3d.art3d.Path3DCollection at 0x7fe02e928810&gt;
+</pre></div>
+</div>
+<img alt="_images/Clustering_Marketing_77_1.png" src="_images/Clustering_Marketing_77_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_rfm_h4</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Cluster&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span>
+        <span class="s1">&#39;Recency&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Frequency&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Monetary&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">]</span>
+    <span class="p">})</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Recency</th>
+      <th>Frequency</th>
+      <th colspan="2" halign="left">Monetary</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>mean</th>
+      <th>mean</th>
+      <th>mean</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Cluster</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>1091</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5.0</td>
+      <td>2.0</td>
+      <td>6.0</td>
+      <td>1207</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>8.0</td>
+      <td>720</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>7.0</td>
+      <td>1270</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">snake_plot</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">,</span> <span class="n">df_rfm_h4</span><span class="p">,</span> <span class="n">df_rfm</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Clustering_Marketing_79_0.png" src="_images/Clustering_Marketing_79_0.png" />
+</div>
+</div>
+<p>The four clusters of the hierarchical clustering (df_rfm_h4) have similar means and a similar distribution over the three categories. This shows, that the clusters are very similar to each other. Therefore, the hierarchical clustering with n=4 is not suitable for the segmentation.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="conclusion">
+<h1>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="segments">
+<h2>Segments<a class="headerlink" href="#segments" title="Permalink to this headline">¶</a></h2>
+<p>After comparing the different diagrams, we conclude that Hierarchical Clustering with 3 clusters, gives the best results.
+The clusters differ clearly from each other and give a more detailed picture of the customers. The distribution and characteristics of the clusters look realistic:</p>
+<ul class="simple">
+<li><p><strong>Cluster 2</strong> contains our favorite customers: these are the most recent buyers who buy most often and have spent the most money. Luckily, most of our customers belong to this cluster. The customer value of this segment is <strong>gold</strong>.</p></li>
+<li><p>In contrast to that <strong>Cluster 1</strong> represents our least favorite customers: whose last purchase was a long time ago, who bought less often and spent the least money. These are our <strong>bronze</strong> customers.</p></li>
+<li><p><strong>Cluster 0</strong> lies between those two extremes: The last purchase was a little longer ago, but for that they buy relatively regularly and spent moderate money. This segment represents our <strong>silver</strong> cutomers.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Snake Plot of Hierarchical Clustering n = 3&#39;</span><span class="p">)</span>
+<span class="n">snake_plot</span><span class="p">(</span><span class="n">df_rfm_scaled</span><span class="p">,</span> <span class="n">df_rfm_h3</span><span class="p">,</span> <span class="n">df_rfm</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;snake_plot.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Clustering_Marketing_83_0.png" src="_images/Clustering_Marketing_83_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="actions">
+<h2>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="gold-customers">
+<h3>Gold customers<a class="headerlink" href="#gold-customers" title="Permalink to this headline">¶</a></h3>
+<p>Gold customers are very valuable to us. Here we should focus on customer loyalty and try to strengthen it (e.g. with individual and regular communication).</p>
+</div>
+<div class="section" id="silver-customers">
+<h3>Silver customers<a class="headerlink" href="#silver-customers" title="Permalink to this headline">¶</a></h3>
+<p>We should try to transform silver customers into gold customers and at the same time avoid them becoming bronze customers. We can support and try to increase their Frequency and Monetary value by giving exclusive offers.</p>
+</div>
+<div class="section" id="bronze-customers">
+<h3>Bronze customers<a class="headerlink" href="#bronze-customers" title="Permalink to this headline">¶</a></h3>
+<p>Since these customers hardly contribute to our sales, they have less relevance. However, we could try to encourage them to buy again with retention offers.</p>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="add-clusterinfo-in-original-dataset">
+<h1>Add Clusterinfo in original dataset<a class="headerlink" href="#add-clusterinfo-in-original-dataset" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Set CustomerID as index for merging</span>
+<span class="n">df_cluster</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cluster</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Recommender_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cluster</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_cluster</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/core/indexes/base.py</span> in <span class="ni">get_loc</span><span class="nt">(self, key, method, tolerance)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3360</span>             <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">3361</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">casted_key</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3362</span>             <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/_libs/index.pyx</span> in <span class="ni">pandas._libs.index.IndexEngine.get_loc</span><span class="nt">()</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/_libs/index.pyx</span> in <span class="ni">pandas._libs.index.IndexEngine.get_loc</span><span class="nt">()</span>
+
+<span class="nn">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ni">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="nt">()</span>
+
+<span class="nn">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ni">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="nt">()</span>
+
+<span class="ne">KeyError</span>: &#39;Cluster&#39;
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_72531</span><span class="o">/</span><span class="mf">2636911354.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df_cluster</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_cluster</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/core/frame.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3456</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">nlevels</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">3457</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_getitem_multilevel</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">3458</span>             <span class="n">indexer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3459</span>             <span class="k">if</span> <span class="n">is_integer</span><span class="p">(</span><span class="n">indexer</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">3460</span>                 <span class="n">indexer</span> <span class="o">=</span> <span class="p">[</span><span class="n">indexer</span><span class="p">]</span>
+
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/core/indexes/base.py</span> in <span class="ni">get_loc</span><span class="nt">(self, key, method, tolerance)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3361</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">casted_key</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3362</span>             <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">3363</span>                 <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span>
+<span class="g g-Whitespace">   </span><span class="mi">3364</span> 
+<span class="g g-Whitespace">   </span><span class="mi">3365</span>         <span class="k">if</span> <span class="n">is_scalar</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="ow">and</span> <span class="n">isna</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">hasnans</span><span class="p">:</span>
+
+<span class="ne">KeyError</span>: &#39;Cluster&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Clusterinfo is missing for some customers as they dropped out in the preprocessing</span>
+<span class="n">df_cluster</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+CategoricalIndex: 397884 entries, 12346 to 18287
+Data columns (total 9 columns):
+ #   Column       Non-Null Count   Dtype         
+---  ------       --------------   -----         
+ 0   InvoiceNo    397884 non-null  category      
+ 1   StockCode    397884 non-null  category      
+ 2   Description  397884 non-null  category      
+ 3   Quantity     397884 non-null  int64         
+ 4   InvoiceDate  397884 non-null  datetime64[ns]
+ 5   UnitPrice    397884 non-null  float64       
+ 6   Country      397884 non-null  category      
+ 7   TotalSum     397884 non-null  float64       
+ 8   Cluster      336802 non-null  category      
+dtypes: category(5), datetime64[ns](1), float64(2), int64(1)
+memory usage: 17.6 MB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cluster</span><span class="p">[</span><span class="n">df_cluster</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>Country</th>
+      <th>TotalSum</th>
+      <th>Cluster</th>
+    </tr>
+    <tr>
+      <th>CustomerID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12346</th>
+      <td>541431</td>
+      <td>23166</td>
+      <td>MEDIUM CERAMIC TOP STORAGE JAR</td>
+      <td>74215</td>
+      <td>2011-01-18 10:01:00</td>
+      <td>1.04</td>
+      <td>United Kingdom</td>
+      <td>77183.60</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12415</th>
+      <td>540267</td>
+      <td>22078</td>
+      <td>RIBBON REEL LACE DESIGN</td>
+      <td>120</td>
+      <td>2011-01-06 11:12:00</td>
+      <td>1.85</td>
+      <td>Australia</td>
+      <td>222.00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12415</th>
+      <td>540267</td>
+      <td>22079</td>
+      <td>RIBBON REEL HEARTS DESIGN</td>
+      <td>120</td>
+      <td>2011-01-06 11:12:00</td>
+      <td>1.45</td>
+      <td>Australia</td>
+      <td>174.00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12415</th>
+      <td>540267</td>
+      <td>22080</td>
+      <td>RIBBON REEL POLKADOTS</td>
+      <td>120</td>
+      <td>2011-01-06 11:12:00</td>
+      <td>1.45</td>
+      <td>Australia</td>
+      <td>174.00</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12415</th>
+      <td>540267</td>
+      <td>22077</td>
+      <td>6 RIBBONS RUSTIC CHARM</td>
+      <td>144</td>
+      <td>2011-01-06 11:12:00</td>
+      <td>1.45</td>
+      <td>Australia</td>
+      <td>208.80</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>18118</th>
+      <td>579301</td>
+      <td>22620</td>
+      <td>4 TRADITIONAL SPINNING TOPS</td>
+      <td>2</td>
+      <td>2011-11-29 11:32:00</td>
+      <td>1.45</td>
+      <td>United Kingdom</td>
+      <td>2.90</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>18118</th>
+      <td>579301</td>
+      <td>22621</td>
+      <td>TRADITIONAL KNITTING NANCY</td>
+      <td>3</td>
+      <td>2011-11-29 11:32:00</td>
+      <td>1.65</td>
+      <td>United Kingdom</td>
+      <td>4.95</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>18118</th>
+      <td>579301</td>
+      <td>22633</td>
+      <td>HAND WARMER UNION JACK</td>
+      <td>1</td>
+      <td>2011-11-29 11:32:00</td>
+      <td>2.10</td>
+      <td>United Kingdom</td>
+      <td>2.10</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>18118</th>
+      <td>579301</td>
+      <td>22865</td>
+      <td>HAND WARMER OWL DESIGN</td>
+      <td>2</td>
+      <td>2011-11-29 11:32:00</td>
+      <td>2.10</td>
+      <td>United Kingdom</td>
+      <td>4.20</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>18118</th>
+      <td>579301</td>
+      <td>22144</td>
+      <td>CHRISTMAS CRAFT LITTLE FRIENDS</td>
+      <td>3</td>
+      <td>2011-11-29 11:32:00</td>
+      <td>2.10</td>
+      <td>United Kingdom</td>
+      <td>6.30</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>61082 rows × 9 columns</p>
+</div></div></div>
+</div>
+<div class="section" id="export-df-for-recommender">
+<h2>Export df for recommender<a class="headerlink" href="#export-df-for-recommender" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Add cluster information to original dataset for recommender use case</span>
+<span class="n">df_cluster</span> <span class="o">=</span><span class="n">df_cluster</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df_rfm_h3</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Recency&#39;</span><span class="p">,</span> <span class="s1">&#39;Frequency&#39;</span><span class="p">,</span> <span class="s1">&#39;Monetary&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="Clustering.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Clustering</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="Recommender.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Recommender</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          Durch Sophia Engstler<br/>
+        
+            &copy; Urheberrechte © 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Content with notebooks" href="Recommender.html" />
-    <link rel="prev" title="Content with notebooks" href="Regression.html" />
+    <link rel="next" title="Code" href="Clustering_Marketing.html" />
+    <link rel="prev" title="Code" href="Regression_Marketing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -116,20 +116,56 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Regression.html">
-   Content with notebooks
+   Regression
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Regression_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Clustering
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Clustering_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Recommender.html">
-   Content with notebooks
+   Recommender
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Recommendation_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -239,13 +275,6 @@
   <a class="reference internal nav-link" href="#plan">
    Plan
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#definition-des-use-case">
-     Definition des Use Case
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data">
@@ -289,17 +318,14 @@
 <h1>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="plan">
 <h2>Plan<a class="headerlink" href="#plan" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="definition-des-use-case">
-<h3>Definition des Use Case<a class="headerlink" href="#definition-des-use-case" title="Permalink to this headline">¶</a></h3>
 <p><strong>Wie können wir den Kundenwert bestimmen und unsere Marketingaktivitäten daran anpassen?</strong>
 Wir möchten unsere Kunden segmentieren, weil wir herausfinden möchten, wie wertvoll die Kunden für uns sind, um den Gruppen passende Angebote anzubieten und unser Marketingbudget basierend auf den Kundenwerten zu verteilen. Der Use Case ist deswegen besonders für die Marketing-Abteilung interessant.
 <img alt="" src="_images/bmc_clustering.pdf" /></p>
 </div>
-</div>
 <div class="section" id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
 <p>Die Kundenanalyse basiert auf der Verkaufshistorie des letzten Jahres. Darin sind alle Bestellungen jedes Kunden berücksichtigt. Der Datensatz für diesen Use Case ist von <a class="reference external" href="https://www.kaggle.com/vijayuv/onlineretail">kaggle</a>. Er stammt ursprünglich von einem Onlineshop, der sich im Gegensatz zu Zalando hauptsächlich an Großhändler richtet. Durch das Clustering nach dem RFM-Framework wurde dieser Unterschied jedoch minimiert.
-Der vollständigen Code befindet sich <span class="xref myst">hier</span>.</p>
+Der vollständigen Code befindet sich <a class="reference internal" href="Clustering_Marketing.html"><span class="doc std std-doc">hier</span></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -307,21 +333,10 @@ Der vollständigen Code befindet sich <span class="xref myst">hier</span>.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_69752</span><span class="o">/</span><span class="mf">2162656668.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Clustering_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Clustering_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;unicode_escape&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -516,21 +531,24 @@ Der vollständigen Code befindet sich <span class="xref myst">hier</span>.</p>
 <div class="section" id="model">
 <h2>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h2>
 <p>Bei der Modellierung arbeitete ich sowohl mit dem kMeans Algorithmus als auch mit einem hierarchischen, agglomerativen Clustering.
-Bevor ich die Daten an den kMeans Algorithmus übergeben konnte, musste ich die Daten erst standardisieren. Um die optimale Anzahl an Clustern zu bestimmen, wurde beim kMeans Algorithmus der Silhouette Score bestimmt. Der Plot zeigte bereits sehr spitze Zacken, was darauf hindeutet, dass viele Datenpunkte nahe bei einem anderen Cluster liegen. Ich ermittelte dennoch die Cluster für k=2, da dies noch das beste Ergebnis erzielte.
-<img alt="" src="_images/silhouette_score.png" />
-Da ich mit diesem Ergebnis jedoch noch nicht zufrieden war und zwei Cluster nur eine geringe Differenzierung der Kunden ermöglichen, führte ich auch noch ein hierarchisches Clustering durch. Das Dendogramm zeigte, dass die Kunden gut in 3 oder 4 Segmente geteilt werden konnten.
-<img alt="" src="../dendogram.png" />
-Nach Bewertung der Plots entschied ich mich für das Hierarchische Clustering mit n=3, da dies einen differenzierten Blick auf die Kunden ermöglichte und sie zu sinnvollen Gruppen zusammenfasste.</p>
+Bevor ich die Daten an den kMeans Algorithmus übergeben konnte, musste ich die Daten erst standardisieren. Um die optimale Anzahl an Clustern zu bestimmen, wurde beim kMeans Algorithmus der Silhouette Score bestimmt. Der Plot zeigte bereits sehr spitze Zacken, was darauf hindeutet, dass viele Datenpunkte nahe bei einem anderen Cluster liegen. Ich ermittelte dennoch die Cluster für k=2, da dies noch das beste Ergebnis erzielte.</p>
+<a class="mb-1 reference internal image-reference" href="_images/kMeans.png"><img alt="Ergebnis des kMeans-Algorithmus" class="mb-1 align-center" src="_images/kMeans.png" style="width: 300px;" /></a>
+<p>Da ich mit diesem Ergebnis jedoch noch nicht zufrieden war und zwei Cluster nur eine geringe Differenzierung der Kunden ermöglichen, führte ich auch noch ein hierarchisches Clustering durch. Das Dendogramm zeigte, dass die Kunden gut in 3 oder 4 Segmente geteilt werden konnten.</p>
+<a class="mb-1 reference internal image-reference" href=".../dendrogram.png"><img alt="Dendrogram" class="mb-1 align-center" src=".../dendrogram.png" style="width: 500px;" /></a>
+<a class="mb-1 reference internal image-reference" href=".../hierarchical.png"><img alt="Ergebnis des hierarchischen Clusterings" class="mb-1 align-center" src=".../hierarchical.png" style="width: 300px;" /></a>
+<p>Nach Bewertung der Plots entschied ich mich für das Hierarchische Clustering mit n=3, da dies einen differenzierten Blick auf die Kunden ermöglichte und sie zu sinnvollen Gruppen zusammenfasste.</p>
 </div>
 <div class="section" id="ergebnisse-und-handlungsempfehlungen">
 <h2>Ergebnisse und Handlungsempfehlungen<a class="headerlink" href="#ergebnisse-und-handlungsempfehlungen" title="Permalink to this headline">¶</a></h2>
+<a class="mb-1 reference internal image-reference" href=".../snake_plot.png"><img alt="Dendrogram" class="mb-1 align-center" src=".../snake_plot.png" style="width: 300px;" /></a>
 <p>Die Auswertung der Analyse ergibt 3 Kundensegmente. Diese unterscheiden sich in ihrem Wert, weswegen wir von Bronze, Silber und Gold-Kunden sprechen:</p>
 <ul class="simple">
 <li><p><strong>Gold:</strong> Das sind unsere liebsten und wichtigsten Kunden. Der letzte Einkauf ist sehr aktuell, sie kaufen regelmäßig und geben das meiste Geld aus. Glücklicherweise, gehören die meisten unserer Kunden zu dieser Gruppe. Es ist wichtig, dass sich Kampagnen in dieser Kundengruppe auf Kundenloyalität fokussieren z.B. durch individuelle Ansprache und exklusive Angebote.</p></li>
 <li><p><strong>Silber:</strong> Diese Kunden sind weniger aktuell, kaufen aber dennoch noch vergleichsweise regelmäßig. Sie geben etwas weniger Geld aus als unsere Gold-Kunden. Es sollte vermieden werden, dass Silber-Kunden ihr Interesse am Shop verlieren und zu Bronze-Kunden werden. Deswegen ist das Ziel, die Kaufhäufigkeit und den monetären Wert dieser Kunden zu steigern und sie somit zu Gold-Kunden zu konvertieren. Das kann durch persönliche Angebote und regelmäßige Aktionen gefördert werden.</p></li>
-<li><p><strong>Bronze:</strong> Diese Kunden kaufen weniger häufig und geben am wenigsten Geld aus. Außerdem liegt ihr letzter Einkauf weiter in der Vergangenheit. Die Ansprache dieser Kunden hat eine geringerre Relevanz, da sie weniger stark zum Unternehmenserfolg beitragen. Gegebenenfalls könnten diese Kunden jedoch mit Retention Angeboten oder über Retargeting erneut angesprochen werden.
-<img alt="" src="_images/snake_plot.png" /></p></li>
+<li><p><strong>Bronze:</strong> Diese Kunden kaufen weniger häufig und geben am wenigsten Geld aus. Außerdem liegt ihr letzter Einkauf weiter in der Vergangenheit. Die Ansprache dieser Kunden hat eine geringerre Relevanz, da sie weniger stark zum Unternehmenserfolg beitragen. Gegebenenfalls könnten diese Kunden jedoch mit Retention Angeboten oder über Retargeting erneut angesprochen werden.</p></li>
 </ul>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -564,19 +582,19 @@ Nach Bewertung der Plots entschied ich mich für das Hierarchische Clustering mi
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="Regression.html" title="previous page">
+        <a class="left-prev" href="Regression_Marketing.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Content with notebooks</p>
+                <p class="prevnext-title">Code</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="Recommender.html" title="next page">
+        <a class="right-next" href="Clustering_Marketing.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Content with notebooks</p>
+                <p class="prevnext-title">Code</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

@@ -1,0 +1,2206 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code &#8212; Projektdokumentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Recommender" href="Recommender.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Projektdokumentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Dieses Buch durchsuchen ..." aria-label="Dieses Buch durchsuchen ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Projektdokumentation
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Vorgehen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Projektplanung.html">
+   Projektplanung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Unternehmen.html">
+   Das Unternehmen
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Use Cases
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Regression.html">
+   Regression
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Regression_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Clustering.html">
+   Clustering
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Clustering_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="Recommender.html">
+   Recommender
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Code
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navigation umschalten" aria-controls="site-navigation"
+                title="Navigation umschalten" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Laden Sie diese Seite herunter"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Recommendation_Marketing.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="In PDF drucken"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
+                    class="fab fa-github"></i>Repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FRecommendation_Marketing.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Öffnen Sie ein Problem"><i class="fas fa-lightbulb"></i>offenes Thema</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Vollbildmodus"
+        title="Vollbildmodus"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Recommendation_Marketing.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Starten Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhalt
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Code
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aim">
+     Aim
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data">
+     Data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import-data">
+   Import data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#first-look-into-the-data">
+     First look into the data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#initial-findings">
+     Initial findings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-preprocessing">
+   Data Preprocessing
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-missing-values">
+     Check missing values
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#change-datatypes">
+     Change datatypes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-dictionary-with-stockcode-and-description">
+     Create dictionary with StockCode and Description
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recommendation-system-1-most-popular-products">
+   Recommendation System 1: Most popular products
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recommendation-system-2-item-to-item-based-recommendation">
+   Recommendation System 2: Item-to-Item based recommendation
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#define-dataset">
+     Define dataset
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prepare-description-column">
+     Prepare Description column
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-tfidf-matrix-from-product-description">
+     Create Tfidf Matrix from product description
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-recommendation-function">
+     Build recommendation function
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recommendation-system-3-collaborative-filtering-based-on-purchase-history-and-cluster">
+   Recommendation system 3: Collaborative filtering based on purchase history and cluster
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-dataframe">
+     Create dataframe
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-matrix">
+     Create Matrix
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#switch-columns-and-rows">
+     Switch columns and rows
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#feature-reduction">
+     Feature reduction
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     Example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">TruncatedSVD</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">linear_kernel</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span><span class="p">,</span> <span class="n">CountVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">NearestNeighbors</span>
+<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">adjusted_rand_score</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="code">
+<h1>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="aim">
+<h2>Aim<a class="headerlink" href="#aim" title="Permalink to this headline">¶</a></h2>
+<p>In order to boost the revenue of social media ads the marketing department wants to improve the product selection for advertisements on social media. Currently, the products are randomly selected. Therefore, we will create different recommendation systems, which should help to predict which product the user will like. The degree of personalisation depends on whether the user is already a customer and whether we can identify him as such at all.</p>
+<ul class="simple">
+<li><p>For unknown users, the most popular products should be displayed.</p></li>
+<li><p>For users who have already clicked on an ad, similar products should be advertised in the future. (Content-based filtering)</p></li>
+<li><p>Known users should be recommended products based on their purchase history and that of similar users. (Collaborative filtering)</p></li>
+</ul>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<p>The dataset is from kaggle: <a class="reference external" href="https://www.kaggle.com/vijayuv/onlineretail">https://www.kaggle.com/vijayuv/onlineretail</a>. We will use the <strong>already preprocessed data</strong> from our clustering case. It includes the following values:</p>
+<ul class="simple">
+<li><p>CustomerID: Customer number assigned to each customer.</p></li>
+<li><p>InvoiceNo: Invoice Number assigned to each order. If this code starts with letter ‘c’, it indicates a cancellation.</p></li>
+<li><p>StockCode: Product (item) code assigned to each product.</p></li>
+<li><p>Description: Product name.</p></li>
+<li><p>Quantity: Amount of each each product (item) per transaction.</p></li>
+<li><p>InvoiceDate: Date, where order was made.</p></li>
+<li><p>UnitPrice: Price of a single product.</p></li>
+<li><p>Country: Country, where each customer resides.</p></li>
+<li><p>Total Sum: Quantity * UnitPrice for each product</p></li>
+<li><p>Cluster: segment of the customer</p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="import-data">
+<h1>Import data<a class="headerlink" href="#import-data" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Recommender_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;unicode_escape&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 397884 entries, 0 to 397883
+Data columns (total 10 columns):
+ #   Column       Non-Null Count   Dtype  
+---  ------       --------------   -----  
+ 0   CustomerID   397884 non-null  int64  
+ 1   InvoiceNo    397884 non-null  int64  
+ 2   StockCode    397884 non-null  object 
+ 3   Description  397884 non-null  object 
+ 4   Quantity     397884 non-null  int64  
+ 5   InvoiceDate  397884 non-null  object 
+ 6   UnitPrice    397884 non-null  float64
+ 7   Country      397884 non-null  object 
+ 8   TotalSum     397884 non-null  float64
+ 9   Cluster      336802 non-null  float64
+dtypes: float64(3), int64(3), object(4)
+memory usage: 30.4+ MB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="first-look-into-the-data">
+<h2>First look into the data<a class="headerlink" href="#first-look-into-the-data" title="Permalink to this headline">¶</a></h2>
+<p>The data contains 397884 rows. Each row stands for one product of an order. Orders can be grouped by InvoiceNo, customers by CustomerID and products by StockCode. As we can already see there are less entries in the Cluster column which indicates that there are missing values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#first look into the data</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>Country</th>
+      <th>TotalSum</th>
+      <th>Cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12346</td>
+      <td>541431</td>
+      <td>23166</td>
+      <td>MEDIUM CERAMIC TOP STORAGE JAR</td>
+      <td>74215</td>
+      <td>2011-01-18 10:01:00</td>
+      <td>1.04</td>
+      <td>United Kingdom</td>
+      <td>77183.6</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>85116</td>
+      <td>BLACK CANDELABRA T-LIGHT HOLDER</td>
+      <td>12</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>2.10</td>
+      <td>Iceland</td>
+      <td>25.2</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>22375</td>
+      <td>AIRLINE BAG VINTAGE JET SET BROWN</td>
+      <td>4</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>4.25</td>
+      <td>Iceland</td>
+      <td>17.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>71477</td>
+      <td>COLOUR GLASS. STAR T-LIGHT HOLDER</td>
+      <td>12</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>3.25</td>
+      <td>Iceland</td>
+      <td>39.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>22492</td>
+      <td>MINI PAINT SET VINTAGE</td>
+      <td>36</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>0.65</td>
+      <td>Iceland</td>
+      <td>23.4</td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CustomerID      4338
+InvoiceNo      18532
+StockCode       3665
+Description     3877
+Quantity         301
+InvoiceDate    17282
+UnitPrice        440
+Country           37
+TotalSum        2810
+Cluster            3
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>InvoiceNo</th>
+      <th>Quantity</th>
+      <th>UnitPrice</th>
+      <th>TotalSum</th>
+      <th>Cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>397884.000000</td>
+      <td>397884.000000</td>
+      <td>397884.000000</td>
+      <td>397884.000000</td>
+      <td>397884.000000</td>
+      <td>336802.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>15294.423453</td>
+      <td>560616.934451</td>
+      <td>12.988238</td>
+      <td>3.116488</td>
+      <td>22.397000</td>
+      <td>1.106371</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1713.141560</td>
+      <td>13106.117773</td>
+      <td>179.331775</td>
+      <td>22.097877</td>
+      <td>309.071041</td>
+      <td>0.961927</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>12346.000000</td>
+      <td>536365.000000</td>
+      <td>1.000000</td>
+      <td>0.001000</td>
+      <td>0.001000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>13969.000000</td>
+      <td>549234.000000</td>
+      <td>2.000000</td>
+      <td>1.250000</td>
+      <td>4.680000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>15159.000000</td>
+      <td>561893.000000</td>
+      <td>6.000000</td>
+      <td>1.950000</td>
+      <td>11.800000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>16795.000000</td>
+      <td>572090.000000</td>
+      <td>12.000000</td>
+      <td>3.750000</td>
+      <td>19.800000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>18287.000000</td>
+      <td>581587.000000</td>
+      <td>80995.000000</td>
+      <td>8142.750000</td>
+      <td>168469.600000</td>
+      <td>2.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total number of orders:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">])))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total number of users:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">])))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total number of products:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;StockCode&#39;</span><span class="p">])))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of orders: 18532
+Total number of users: 4338
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of products: 3665
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="initial-findings">
+<h2>Initial findings<a class="headerlink" href="#initial-findings" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The <em>UnitPrice</em> for a product is relatively low and has some outliers on the right side of the distribution. Same applies to <em>TotalSum</em>.</p></li>
+<li><p>There are 18532 orders from 4338 different customers. We have 3665 different products.</p></li>
+<li><p>The <em>Description</em> texts are all in capital letters, which needs further preprocessing in our recommendation system 2.</p></li>
+<li><p>There are less entries in the <em>Cluster</em> column which indicates missing values, which we will need to take care of.</p></li>
+</ul>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="data-preprocessing">
+<h1>Data Preprocessing<a class="headerlink" href="#data-preprocessing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="check-missing-values">
+<h2>Check missing values<a class="headerlink" href="#check-missing-values" title="Permalink to this headline">¶</a></h2>
+<p>As we already preprocessed the data in the clustering use case, all NA-values were already dropped. However, the cluster-information is missing for some customers who dropped out during the preparation of the rfm-Framework. As our recommendation systems won’t use the column we can include the entries.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CustomerID         0
+InvoiceNo          0
+StockCode          0
+Description        0
+Quantity           0
+InvoiceDate        0
+UnitPrice          0
+Country            0
+TotalSum           0
+Cluster        61082
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="change-datatypes">
+<h2>Change datatypes<a class="headerlink" href="#change-datatypes" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">])</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;StockCode&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;StockCode&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cluster&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="create-dictionary-with-stockcode-and-description">
+<h2>Create dictionary with StockCode and Description<a class="headerlink" href="#create-dictionary-with-stockcode-and-description" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#create dictionary for later checks</span>
+<span class="n">items</span> <span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">StockCode</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">Description</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="recommendation-system-1-most-popular-products">
+<h1>Recommendation System 1: Most popular products<a class="headerlink" href="#recommendation-system-1-most-popular-products" title="Permalink to this headline">¶</a></h1>
+<p>One way to systematically select products is to rank the products based on how many times they were sold. In this way, we can identify the 20 most popular products and recommend them to all our customers. We will test our definition of most popular products on the CustomerID (How many customers have bought the item?) and the Quantity (How many times was the item bought?) features. Then we will see which one of them is more suitable for the definition of popular products.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># most popular products: customer- and quantity-based</span>
+<span class="n">popular</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;StockCode&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span>
+    <span class="s1">&#39;CustomerID&#39;</span><span class="p">:</span> <span class="s1">&#39;count&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Quantity&#39;</span><span class="p">:</span><span class="s1">&#39;sum&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Most popular products by Quantity</span>
+<span class="n">popular</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Quantity&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <th>StockCode</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>23843</th>
+      <td>1</td>
+      <td>80995</td>
+    </tr>
+    <tr>
+      <th>23166</th>
+      <td>198</td>
+      <td>77916</td>
+    </tr>
+    <tr>
+      <th>84077</th>
+      <td>473</td>
+      <td>54415</td>
+    </tr>
+    <tr>
+      <th>22197</th>
+      <td>1068</td>
+      <td>49183</td>
+    </tr>
+    <tr>
+      <th>85099B</th>
+      <td>1618</td>
+      <td>46181</td>
+    </tr>
+    <tr>
+      <th>85123A</th>
+      <td>2035</td>
+      <td>36782</td>
+    </tr>
+    <tr>
+      <th>84879</th>
+      <td>1408</td>
+      <td>35362</td>
+    </tr>
+    <tr>
+      <th>21212</th>
+      <td>1068</td>
+      <td>33693</td>
+    </tr>
+    <tr>
+      <th>23084</th>
+      <td>842</td>
+      <td>27202</td>
+    </tr>
+    <tr>
+      <th>22492</th>
+      <td>325</td>
+      <td>26076</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Most popular products by Quantity</span>
+<span class="n">popular</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <th>StockCode</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>85123A</th>
+      <td>2035</td>
+      <td>36782</td>
+    </tr>
+    <tr>
+      <th>22423</th>
+      <td>1723</td>
+      <td>12402</td>
+    </tr>
+    <tr>
+      <th>85099B</th>
+      <td>1618</td>
+      <td>46181</td>
+    </tr>
+    <tr>
+      <th>84879</th>
+      <td>1408</td>
+      <td>35362</td>
+    </tr>
+    <tr>
+      <th>47566</th>
+      <td>1396</td>
+      <td>15291</td>
+    </tr>
+    <tr>
+      <th>20725</th>
+      <td>1317</td>
+      <td>17897</td>
+    </tr>
+    <tr>
+      <th>22720</th>
+      <td>1159</td>
+      <td>7020</td>
+    </tr>
+    <tr>
+      <th>20727</th>
+      <td>1105</td>
+      <td>11291</td>
+    </tr>
+    <tr>
+      <th>POST</th>
+      <td>1099</td>
+      <td>3120</td>
+    </tr>
+    <tr>
+      <th>23203</th>
+      <td>1098</td>
+      <td>19516</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>The sorted values reveal that there are individual customers who buy a very large quantity of a product. Since there preference cannot be assumed for the entire customer base, we define the most popular products depending on how many customers have already bought the product.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">popular</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;StockCode&#39;&gt;
+</pre></div>
+</div>
+<img alt="_images/Recommendation_Marketing_21_1.png" src="_images/Recommendation_Marketing_21_1.png" />
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="recommendation-system-2-item-to-item-based-recommendation">
+<h1>Recommendation System 2: Item-to-Item based recommendation<a class="headerlink" href="#recommendation-system-2-item-to-item-based-recommendation" title="Permalink to this headline">¶</a></h1>
+<p>Even though our first system is already better than a random product selection, it offers all customers the same products and doesn’t leverage existing information about the user. If an user has already clicked on a social media ad and accepts the cookies, we can identify him again. Therefore, we can recommend products similar to the one’s he has already viewed.</p>
+<div class="section" id="define-dataset">
+<h2>Define dataset<a class="headerlink" href="#define-dataset" title="Permalink to this headline">¶</a></h2>
+<p>To identify similar products we will use the <em>Description</em> and <em>StockCode</em> feature.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>Country</th>
+      <th>TotalSum</th>
+      <th>Cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12346</td>
+      <td>541431</td>
+      <td>23166</td>
+      <td>MEDIUM CERAMIC TOP STORAGE JAR</td>
+      <td>74215</td>
+      <td>2011-01-18 10:01:00</td>
+      <td>1.04</td>
+      <td>United Kingdom</td>
+      <td>77183.6</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>85116</td>
+      <td>BLACK CANDELABRA T-LIGHT HOLDER</td>
+      <td>12</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>2.10</td>
+      <td>Iceland</td>
+      <td>25.2</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>22375</td>
+      <td>AIRLINE BAG VINTAGE JET SET BROWN</td>
+      <td>4</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>4.25</td>
+      <td>Iceland</td>
+      <td>17.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>71477</td>
+      <td>COLOUR GLASS. STAR T-LIGHT HOLDER</td>
+      <td>12</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>3.25</td>
+      <td>Iceland</td>
+      <td>39.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>22492</td>
+      <td>MINI PAINT SET VINTAGE</td>
+      <td>36</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>0.65</td>
+      <td>Iceland</td>
+      <td>23.4</td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#drop unnecessary columns</span>
+<span class="n">df_reco2</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">,</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">,</span> <span class="s1">&#39;InvoiceDate&#39;</span><span class="p">,</span> <span class="s1">&#39;Quantity&#39;</span><span class="p">,</span> <span class="s1">&#39;UnitPrice&#39;</span><span class="p">,</span> <span class="s1">&#39;TotalSum&#39;</span><span class="p">,</span> <span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="s1">&#39;Cluster&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#only one row for each product</span>
+<span class="n">df_reco2</span><span class="o">=</span><span class="n">df_reco3</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_73141</span><span class="o">/</span><span class="mf">3851295438.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#only one row for each product</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">df_reco2</span><span class="o">=</span><span class="n">df_reco3</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+
+<span class="ne">NameError</span>: name &#39;df_reco3&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_reco2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>StockCode</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>23166</td>
+      <td>MEDIUM CERAMIC TOP STORAGE JAR</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>85116</td>
+      <td>BLACK CANDELABRA T-LIGHT HOLDER</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>22375</td>
+      <td>AIRLINE BAG VINTAGE JET SET BROWN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>71477</td>
+      <td>COLOUR GLASS. STAR T-LIGHT HOLDER</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>22492</td>
+      <td>MINI PAINT SET VINTAGE</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="prepare-description-column">
+<h2>Prepare Description column<a class="headerlink" href="#prepare-description-column" title="Permalink to this headline">¶</a></h2>
+<p style='color:red'>Wieso funktioniert löschen von Satzzeichen nicht?Noch weitere Tips für Preprocessing?</p><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#regular expressiond, z.B. nur noch Buchstaben</span>
+<span class="c1">#lower description and delete all punctuation marks</span>
+<span class="n">df_reco2</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_reco2</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="n">df_reco2</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_reco2</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_reco2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>StockCode</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>23166</td>
+      <td>medium ceramic top storage jar</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>85116</td>
+      <td>black candelabra t-light holder</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>22375</td>
+      <td>airline bag vintage jet set brown</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>71477</td>
+      <td>colour glass. star t-light holder</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>22492</td>
+      <td>mini paint set vintage</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="create-tfidf-matrix-from-product-description">
+<h2>Create Tfidf Matrix from product description<a class="headerlink" href="#create-tfidf-matrix-from-product-description" title="Permalink to this headline">¶</a></h2>
+<p>Tf-Idf-Vectorizer transforms text to feature vectors. It converts each word/token to a feature index in the matrix. Additionally, it takes into account the relevance of each term based on how many times it occurs in the text. Words that occur less frequently are given a higher value than words that occur very frequently, because they can be used to identify a single product with a higher probability.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tf</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">analyzer</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">,</span><span class="n">ngram_range</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span><span class="n">min_df</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">stop_words</span><span class="o">=</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
+<span class="c1">#create tfidf-matrix: Product description is broken down into words. Each word becomes a column and receives value in row, where it occurs</span>
+<span class="n">tfidf_matrix</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_reco2</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>With the <em>linear_kernel()</em>-Funktion we can calculate the cosinus-simularity between the products. The cosinus simularity considers the angle between to vectors. The higher the value, the more similar are the vectors.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cosine_sim</span> <span class="o">=</span> <span class="n">linear_kernel</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">,</span> <span class="n">tfidf_matrix</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>As linear kernel compares each products with all of the others, it results in an array, which contains a list of all simularity measures for each product. This list is ordered by their sequence in the matrix. For example Product 1 is 100% similar to product 1 as it is the same.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cosine_sim</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1., 0., 0., ..., 0., 0., 0.],
+       [0., 1., 0., ..., 0., 0., 0.],
+       [0., 0., 1., ..., 0., 0., 0.],
+       ...,
+       [0., 0., 0., ..., 1., 0., 0.],
+       [0., 0., 0., ..., 0., 1., 0.],
+       [0., 0., 0., ..., 0., 0., 1.]])
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="build-recommendation-function">
+<h2>Build recommendation function<a class="headerlink" href="#build-recommendation-function" title="Permalink to this headline">¶</a></h2>
+<p>We now have the information how similar each product description is compared to another. Therefore, we can build a function, which orders the recommended products based on how similar they are to the original product. In other words: We rank the products in descending order of cosinus similarity.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build a 1-dimensional array with description</span>
+<span class="n">description</span> <span class="o">=</span> <span class="n">df_reco2</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span>
+<span class="n">indices</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">df_reco2</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">df_reco2</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">])</span>
+
+<span class="c1"># Function that get book recommendations based on the cosine similarity score of book authors</span>
+<span class="k">def</span> <span class="nf">item_recommendation</span><span class="p">(</span><span class="n">product</span><span class="p">):</span>
+    <span class="c1"># get index of product</span>
+    <span class="n">idx</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">product</span><span class="p">]</span>
+    <span class="c1"># get all cosinus similarities of the product</span>
+    <span class="n">sim_scores</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">cosine_sim</span><span class="p">[</span><span class="n">idx</span><span class="p">]))</span>
+    <span class="c1">#sort cosinus similarity in descending order</span>
+    <span class="n">sim_scores</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">sim_scores</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1">#limit to top 20 most similar</span>
+    <span class="n">sim_scores</span> <span class="o">=</span> <span class="n">sim_scores</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">21</span><span class="p">]</span>
+    <span class="c1"># get id for recommended products in order to get their description names</span>
+    <span class="n">item_indices</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sim_scores</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">description</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">item_indices</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#testing the function</span>
+<span class="n">item_recommendation</span><span class="p">(</span><span class="s1">&#39;airline bag vintage jet set brown&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>62            airline bag vintage jet set red
+37          airline bag vintage jet set white
+109       airline bag vintage world champion 
+63               airline bag vintage tokyo 78
+4340             jumbo bag vintage christmas 
+806                    jumbo bag vintage leaf
+1230                 jumbo bag vintage doily 
+1158                 lunch bag vintage doily 
+164018              jumbo bag vintage doiley 
+194811              lunch bag vintage doiley 
+395           charlotte bag vintage alphabet 
+4859                cabin bag vintage paisley
+1231              cabin bag vintage retrospot
+784             lunch bag vintage leaf design
+10888       cosmetic bag vintage rose paisley
+1089            wash bag vintage rose paisley
+10008      overnight bag vintage rose paisley
+205411       weekend bag vintage rose paisley
+11498               airline lounge,metal sign
+179215          classic diamante earrings jet
+Name: Description, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="recommendation-system-3-collaborative-filtering-based-on-purchase-history-and-cluster">
+<h1>Recommendation system 3: Collaborative filtering based on purchase history and cluster<a class="headerlink" href="#recommendation-system-3-collaborative-filtering-based-on-purchase-history-and-cluster" title="Permalink to this headline">¶</a></h1>
+<p>If we can clearly identify a customer, we can personalise the ad even more. We can consider their purchasing history as well as how much they liked the product.</p>
+<div class="section" id="create-dataframe">
+<h2>Create dataframe<a class="headerlink" href="#create-dataframe" title="Permalink to this headline">¶</a></h2>
+<p>We will base the recommender on the <em>CustomerID</em> and <em>StockCode</em> and <em>Quantity</em> feature. In this way, we see who bought what product and we use <em>Quantity</em> as an indicator of how much the customer liked the product.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>Country</th>
+      <th>TotalSum</th>
+      <th>Cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12346</td>
+      <td>541431</td>
+      <td>23166</td>
+      <td>MEDIUM CERAMIC TOP STORAGE JAR</td>
+      <td>74215</td>
+      <td>2011-01-18 10:01:00</td>
+      <td>1.04</td>
+      <td>United Kingdom</td>
+      <td>77183.6</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>85116</td>
+      <td>BLACK CANDELABRA T-LIGHT HOLDER</td>
+      <td>12</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>2.10</td>
+      <td>Iceland</td>
+      <td>25.2</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>22375</td>
+      <td>AIRLINE BAG VINTAGE JET SET BROWN</td>
+      <td>4</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>4.25</td>
+      <td>Iceland</td>
+      <td>17.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>71477</td>
+      <td>COLOUR GLASS. STAR T-LIGHT HOLDER</td>
+      <td>12</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>3.25</td>
+      <td>Iceland</td>
+      <td>39.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>22492</td>
+      <td>MINI PAINT SET VINTAGE</td>
+      <td>36</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>0.65</td>
+      <td>Iceland</td>
+      <td>23.4</td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#drop unnecessary columns</span>
+<span class="n">df_reco3</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">,</span> <span class="s1">&#39;InvoiceDate&#39;</span><span class="p">,</span> <span class="s1">&#39;Cluster&#39;</span><span class="p">,</span> <span class="s1">&#39;Description&#39;</span><span class="p">,</span> <span class="s1">&#39;UnitPrice&#39;</span><span class="p">,</span> <span class="s1">&#39;TotalSum&#39;</span><span class="p">,</span> <span class="s1">&#39;Country&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#drop rows with missing values</span>
+<span class="n">df_reco3</span><span class="o">=</span><span class="n">df_reco3</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_reco3</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>StockCode</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12346</td>
+      <td>23166</td>
+      <td>74215</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12347</td>
+      <td>85116</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>12347</td>
+      <td>22375</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>12347</td>
+      <td>71477</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>12347</td>
+      <td>22492</td>
+      <td>36</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="create-matrix">
+<h2>Create Matrix<a class="headerlink" href="#create-matrix" title="Permalink to this headline">¶</a></h2>
+<p>The utility_matrix shows all which items each user has bought. Products are listed in columns, customers in rows and the quantity is in the cell of the product bought by a customer. Most values are unknown as one singluar customer doesn’t buy nearly all different products.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cluster_utility_matrix</span> <span class="o">=</span> <span class="n">df_reco3</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;Quantity&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;StockCode&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;first&#39;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">cluster_utility_matrix</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>StockCode</th>
+      <th>10002</th>
+      <th>10080</th>
+      <th>10120</th>
+      <th>10123C</th>
+      <th>10124A</th>
+      <th>10124G</th>
+      <th>10125</th>
+      <th>10133</th>
+      <th>10135</th>
+      <th>11001</th>
+      <th>...</th>
+      <th>90214V</th>
+      <th>90214W</th>
+      <th>90214Y</th>
+      <th>90214Z</th>
+      <th>BANK CHARGES</th>
+      <th>C2</th>
+      <th>DOT</th>
+      <th>M</th>
+      <th>PADS</th>
+      <th>POST</th>
+    </tr>
+    <tr>
+      <th>CustomerID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12346</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12347</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12348</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>12349</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>12350</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 3665 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cluster_utility_matrix</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(4338, 3665)
+</pre></div>
+</div>
+</div>
+</div>
+<p>The shape reveals again our 4288 customers and 3626 different products.</p>
+</div>
+<div class="section" id="switch-columns-and-rows">
+<h2>Switch columns and rows<a class="headerlink" href="#switch-columns-and-rows" title="Permalink to this headline">¶</a></h2>
+<p>In the next step, we will transpose the matrix, which means we swith columns and rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Transposing the matrix</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">cluster_utility_matrix</span><span class="o">.</span><span class="n">T</span>
+<span class="n">X</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>CustomerID</th>
+      <th>12346</th>
+      <th>12347</th>
+      <th>12348</th>
+      <th>12349</th>
+      <th>12350</th>
+      <th>12352</th>
+      <th>12353</th>
+      <th>12354</th>
+      <th>12355</th>
+      <th>12356</th>
+      <th>...</th>
+      <th>18273</th>
+      <th>18274</th>
+      <th>18276</th>
+      <th>18277</th>
+      <th>18278</th>
+      <th>18280</th>
+      <th>18281</th>
+      <th>18282</th>
+      <th>18283</th>
+      <th>18287</th>
+    </tr>
+    <tr>
+      <th>StockCode</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10002</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10080</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10120</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10123C</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10124A</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 4338 columns</p>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="feature-reduction">
+<h2>Feature reduction<a class="headerlink" href="#feature-reduction" title="Permalink to this headline">¶</a></h2>
+<p>As we have a third dimension with the quantity-column, we have to perform a feature reduction. This means we recreate the utility matrix with 2 instead of 3 components. Therefore, we will use SVD (Singular Value Decomposition), which reduces the number of features of a dataset by extracting its latent factors. This mapping facilitates a clear representation of relationships between users and items.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Decomposing the matrix</span>
+<span class="n">SVD</span> <span class="o">=</span> <span class="n">TruncatedSVD</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">decomposed_matrix</span> <span class="o">=</span> <span class="n">SVD</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">decomposed_matrix</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(3665, 10)
+</pre></div>
+</div>
+</div>
+</div>
+<p>To determine the similarity of users, we will use pearson correlation coefficient and create a correlation matrix. It calculates the correlation between every single customer and all users, who have bought at least one same product like our target user. The correlation with other user’s is 0. Once we have these values, we can recommend products based on the purchasing behavior of similar customers.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Correlation Matrix</span>
+<span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">decomposed_matrix</span><span class="p">)</span>
+<span class="n">correlation_matrix</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(3665, 3665)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>We randomly choose one product, which was bought by a customer to see what other products similar users bought and what items we should recommend.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#randomly choose a product</span>
+<span class="c1">#save StockCode in Variable</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">99</span><span class="p">]</span>
+
+<span class="c1"># Save the chosen product_id in variable</span>
+<span class="n">product_ID</span><span class="o">=</span><span class="mi">99</span>
+
+<span class="c1">#print StockCode</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;17096&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#correlation of all items with the chosen item/user</span>
+<span class="n">correlation_product_ID</span> <span class="o">=</span> <span class="n">correlation_matrix</span><span class="p">[</span><span class="n">product_ID</span><span class="p">]</span>
+<span class="n">correlation_product_ID</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(3665,)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Rank correlated products for the item in descending order</span>
+<span class="n">Recommend</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">correlation_product_ID</span> <span class="o">&gt;</span> <span class="mf">0.90</span><span class="p">])</span>
+
+<span class="c1"># Removes the item already bought by the customer</span>
+<span class="n">Recommend</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+
+<span class="c1">#Print 10 most correlated items</span>
+<span class="n">Recommend</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">9</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;10135&#39;,
+ &#39;15030&#39;,
+ &#39;15036&#39;,
+ &#39;15039&#39;,
+ &#39;15044A&#39;,
+ &#39;15044D&#39;,
+ &#39;15058C&#39;,
+ &#39;16008&#39;,
+ &#39;16015&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Product bought: &#39;</span><span class="p">,</span> <span class="n">items</span><span class="p">[</span><span class="s1">&#39;17096&#39;</span><span class="p">])</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Recommended products: &#39;</span><span class="p">)</span>
+<span class="c1">#print product description to StockCodes</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">Recommend</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">9</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">items</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Product bought:  ASSORTED LAQUERED INCENSE HOLDERS
+Recommended products: 
+COLOURING PENCILS BROWN TUBE
+FAN BLACK FRAME 
+ASSORTED COLOURS SILK FAN
+SANDALWOOD FAN
+PINK PAPER PARASOL 
+RED PAPER PARASOL
+ICE CREAM DESIGN GARDEN PARASOL
+SMALL FOLDING SCISSOR(POINTED EDGE)
+MEDIUM CHINESE STYLE SCISSOR
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="conclusion">
+<h1>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h1>
+<p>Based on the purchase history of our clients, we were able to build 3 different recommenders to optimise our social media ads.</p>
+<ul class="simple">
+<li><p>For the recommender systems to be successful, it is essential, that the recommenders are <strong>connected to current data sources</strong> and update automatically. Only in this way, new products or a change in buying behaviour can be included in the recommendation.</p></li>
+<li><p>In order to be able to address the customer individually, it is important that we can <strong>clearly identify</strong> him or her. This is the basic requirement for Recommender system 3.</p></li>
+<li><p>The lack of mapping is known as the cold start problem.  Even if the degree of personalisation is lower, Recommender system 2 and 1 form a solid <strong>fallback solution to counteract this problem</strong>. We can either show customers similar products to those they have already seen or draw their attention to our most popular products.</p></li>
+</ul>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="Recommender.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Recommender</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          Durch Sophia Engstler<br/>
+        
+            &copy; Urheberrechte © 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content with notebooks &#8212; Projektdokumentation</title>
+    <title>Recommender &#8212; Projektdokumentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -42,8 +42,6 @@
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -53,7 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Clustering" href="Clustering.html" />
+    <link rel="next" title="Code" href="Recommendation_Marketing.html" />
+    <link rel="prev" title="Code" href="Clustering_Marketing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -117,20 +116,56 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Regression.html">
-   Content with notebooks
+   Regression
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Regression_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Clustering.html">
    Clustering
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Clustering_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   Content with notebooks
+   Recommender
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Recommendation_Marketing.html">
+     Code
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -237,18 +272,40 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#markdown-notebooks">
-   Markdown + notebooks
+  <a class="reference internal nav-link" href="#plan">
+   Plan
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#myst-markdown">
-   MyST markdown
+  <a class="reference internal nav-link" href="#data">
+   Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#code-blocks-and-outputs">
-   Code blocks and outputs
+  <a class="reference internal nav-link" href="#model">
+   Model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recommender-1-top-25-der-beliebtesten-produkte">
+     Recommender 1: Top 25 der beliebtesten Produkte
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recommender-2-content-based-filtering">
+     Recommender 2: Content-based Filtering
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recommender-3-collaborative-filtering">
+     Recommender 3: Collaborative Filtering
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evaluation">
+   Evaluation
   </a>
  </li>
 </ul>
@@ -262,88 +319,183 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="content-with-notebooks">
-<h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Permalink to this headline">¶</a></h1>
-<p>You can also create content with Jupyter Notebooks. This means that you can include
-code blocks and their outputs in your book.</p>
-<div class="section" id="markdown-notebooks">
-<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Permalink to this headline">¶</a></h2>
-<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
-<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
-<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-math^{blocks}
-\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
-\end{split}\]</div>
-<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
-</div>
-<div class="section" id="myst-markdown">
-<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Permalink to this headline">¶</a></h2>
-<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
-out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
-or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
-</div>
-<div class="section" id="code-blocks-and-outputs">
-<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Permalink to this headline">¶</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="recommender">
+<h1>Recommender<a class="headerlink" href="#recommender" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="plan">
+<h2>Plan<a class="headerlink" href="#plan" title="Permalink to this headline">¶</a></h2>
+<p><strong>Wie können wir die Social Media Ads personalisieren?</strong></p>
+<p>Auf Social Media (z.B. in der Instagram Story oder im Facebook Feed) werden aktuell zufällig Produkte als Werbung ausgespielt. Diese Ads sollen personalisiert werden, um deren Performance zu verbessern und den Umsatz durch die Social Media Ads zu steigern.</p>
+<p>Die Herausforderung ist hierbei, dass Nutzer, die die Werbung sehen, teilweise noch keine aktuellen Kunden sind und auch nicht jeder Kunde identifiziert werden kann. Deswegen müssen verschiedene Recommender erstellt werden, die sich dann automatisch umstellen.</p>
+<p><img alt="" src="_images/bmc_recommender.pdf" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<p>Die Recommender basieren auf dem bereits vorbereiteten Clustering-Datensatz. Darin sind nicht nur Kunden- und Bestellinformationen, sondern auch alle Produkte enthalten. Da der Datensatz durch die Kundensegmentierung bereits bekannt war, war der Aufwand für die explorative Datenanalyse geringer. Je nach Recommender, wurden die Daten unterschiedlich aufbereitet.</p>
+<p>Der vollständigen Code befindet sich <a class="reference internal" href="Recommendation_Marketing.html"><span class="doc std std-doc">hier</span></a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Recommender_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;unicode_escape&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_69758</span><span class="o">/</span><span class="mf">2191868119.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>Country</th>
+      <th>TotalSum</th>
+      <th>Cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12346</td>
+      <td>541431</td>
+      <td>23166</td>
+      <td>MEDIUM CERAMIC TOP STORAGE JAR</td>
+      <td>74215</td>
+      <td>2011-01-18 10:01:00</td>
+      <td>1.04</td>
+      <td>United Kingdom</td>
+      <td>77183.6</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>85116</td>
+      <td>BLACK CANDELABRA T-LIGHT HOLDER</td>
+      <td>12</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>2.10</td>
+      <td>Iceland</td>
+      <td>25.2</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>22375</td>
+      <td>AIRLINE BAG VINTAGE JET SET BROWN</td>
+      <td>4</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>4.25</td>
+      <td>Iceland</td>
+      <td>17.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>71477</td>
+      <td>COLOUR GLASS. STAR T-LIGHT HOLDER</td>
+      <td>12</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>3.25</td>
+      <td>Iceland</td>
+      <td>39.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>12347</td>
+      <td>537626</td>
+      <td>22492</td>
+      <td>MINI PAINT SET VINTAGE</td>
+      <td>36</td>
+      <td>2010-12-07 14:57:00</td>
+      <td>0.65</td>
+      <td>Iceland</td>
+      <td>23.4</td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
-
-<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
-<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
-
-
-<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
-<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">.5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total number of orders:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;InvoiceNo&#39;</span><span class="p">])))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total number of users:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">])))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total number of products:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;StockCode&#39;</span><span class="p">])))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of orders: 18532
+Total number of users: 4338
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of products: 3665
 </pre></div>
 </div>
 </div>
 </div>
-<p>There is a lot more that you can do with outputs (such as including interactive outputs)
-with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
+</div>
+<div class="section" id="model">
+<h2>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h2>
+<p>Abhängig davon, ob ein Kunde identifiziert werden konnte und ob wir bereits Informationen über ihn sammeln konnten, wurden drei verschiedene Recommender entwickelt.</p>
+<ul class="simple">
+<li><p>Recommender 1: Beliebteste Produkte (Unbekannter Nutzer, keine Kaufhistorie)</p></li>
+<li><p>Recommender 2: Content-based filtering (Bekannter Nutzer, keine Kaufhistorie/nur Views)</p></li>
+<li><p>Recommender 3: Collaborative filtering (Bekannter Nutzer, Kaufhistorie)</p></li>
+</ul>
+<div class="section" id="recommender-1-top-25-der-beliebtesten-produkte">
+<h3>Recommender 1: Top 25 der beliebtesten Produkte<a class="headerlink" href="#recommender-1-top-25-der-beliebtesten-produkte" title="Permalink to this headline">¶</a></h3>
+<p>Dieser Recommender hat den geringsten Personalisierungsgrad. Dennoch ist es ein Fortschritt im Vergleich zu einer zufälligen Produktauswahl. Die Produkte werden basierend auf ihrem Absatz geordnet und die 25 besten Produkte werden dem Kunden angeboten.</p>
+<p><img alt="" src="_images/popular.png" /></p>
+</div>
+<div class="section" id="recommender-2-content-based-filtering">
+<h3>Recommender 2: Content-based Filtering<a class="headerlink" href="#recommender-2-content-based-filtering" title="Permalink to this headline">¶</a></h3>
+<p>Ziel dieses Recommender Systems ist es, einem Kunden, der bereits auf unsere Anzeigen reagiert hat, ähnliche Produkte zu dem von ihm angesehenen Produkt anzuzeigen. Dafür nutzen wir Content-based Filtering, d.h. wir vergleichen die Beschreibung der Produkte und finden Ähnlichkeiten. Dafür nutzen wir eine Tfidf-Matrix. Diese teilt die Beschreibung jedes Produkts in einzelne Wörter und gewichtet die Tokens abhängig von ihrer Frequenz. So kann jedes Produkt mit allen anderen verglichen und jeweils ein Score ermittelt werden, wie ähnlich die beiden Produkte sind. Abschließend werden die Produkte in absteigender Score-Reihenfolge geordnet und die Produkte mit dem höchsten Score können als Ad ausgespielt werden.</p>
+<p>Die Herausforderung war hierbei, dass die Produktbeschreibungen auch Satzzeichen enthielten und Synonyme verwendeten.</p>
+</div>
+<div class="section" id="recommender-3-collaborative-filtering">
+<h3>Recommender 3: Collaborative Filtering<a class="headerlink" href="#recommender-3-collaborative-filtering" title="Permalink to this headline">¶</a></h3>
+<p>Dieser Recommender hat den höchsten Personalisierungsgrad, da wir den Kunden identifizieren und seiner Bestellhistorie zuordnen können. Der Kunde wird bei diesem Recommender mit ähnlichen Nutzern verglichen und es werden ihm Produkte angezeigt, die ähnliche Nutzer gekauft haben. Hier spielt neben der Kunden- und Product-ID auch die Bestellmenge eine Rolle, die Aufschluss darüber gibt, wie gut einem Kunden das Produkt gefällt. Nach einer Feature Reduction kann wiederum eine Korrelationsmatrix ermittelt und ein Ähnlichkeitsscore definiert werden. Anhand dessen können wieder die Produkte mit dem höchsten Score als Ad ausgespielt werden.</p>
+</div>
+</div>
+<div class="section" id="evaluation">
+<h2>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">¶</a></h2>
+<p>Der Aufbau der Recommender erfolgte exemplarisch auf Basis eines statischen Datensatzes. Damit die Recommender erfolgreich sind, ist es wichtig, diese an die aktuelle Datenquelle anzubinden. Da sich Kundeninteressen und das Sortiment stetig verändern, ist es wichtig, die Recommender nicht auf einer statischen Datenbasis zu betreiben.</p>
+<p>Auch wenn Recommender 3 den höchsten Personalisierungsgrad hat, bieten Recommender 1 und 2 eine gute Fallbacklösung. Deswegen ist das Zusammenspiel der Recommender besonders wichtig. Abhängig davon, welche Informationen über einen Nutzer vorliegen, muss beim Deployment entschieden werden, welcher Recommender genutzt wird.</p>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -377,14 +529,23 @@ with your book. For more information about this, see <a class="reference externa
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="Clustering.html" title="previous page">
+        <a class="left-prev" href="Clustering_Marketing.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Clustering</p>
+                <p class="prevnext-title">Code</p>
             </div>
         </a>
     </div>
+     <div id="next">
+        <a class="right-next" href="Recommendation_Marketing.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Code</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
 
 </div>
         

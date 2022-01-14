@@ -17,20 +17,16 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from matplotlib import rcParams, cycler
-import matplotlib.pyplot as plt
-import numpy as np
-plt.ion()
+#only one row for each product
+df_reco2=df_reco3.drop_duplicates()
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_70432/2191868119.py[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0;32mfrom[0m [0mmatplotlib[0m [0;32mimport[0m [0mrcParams[0m[0;34m,[0m [0mcycler[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      2[0m [0;32mimport[0m [0mmatplotlib[0m[0;34m.[0m[0mpyplot[0m [0;32mas[0m [0mplt[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      3[0m [0;32mimport[0m [0mnumpy[0m [0;32mas[0m [0mnp[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      4[0m [0mplt[0m[0;34m.[0m[0mion[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-
-[0;31mModuleNotFoundError[0m: No module named 'matplotlib'
-ModuleNotFoundError: No module named 'matplotlib'
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_73141/3851295438.py[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0;31m#only one row for each product[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0mdf_reco2[0m[0;34m=[0m[0mdf_reco3[0m[0;34m.[0m[0mdrop_duplicates[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;31mNameError[0m: name 'df_reco3' is not defined
+NameError: name 'df_reco3' is not defined
 
