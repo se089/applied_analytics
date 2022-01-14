@@ -1,16 +1,2 @@
-# Welcome to your Jupyter Book
-
-This is a small sample book to give you a feel for how book content is
-structured.
-
-:::{note}
-Here is a note!
-:::
-
-And here is a code block:
-
-```
-e = mc^2
-```
-
-Check out the content pages bundled with this sample book to see more.
+# Projektdokumentation
+Die Aufgabenstellung des Projekts war es, drei verschiedene Use Cases für Data Analytics in einem Unternehmen der Wahl zu identifizieren und diese anhand von Dummy-Datensätzen exemplarisch durchzuführen. In den Use Cases sollten Algorithmen aus den Bereichen Clustering, Regression und Klassifikation verwendet werden. Die Durchführung des Projekts orientierte sich am Data Science Lifecycle. Die Ergebnisse sollten interpretiert und am Ende so präsentiert werden, dass die Zielgruppe (z.B. Marketing, Controlling, Einkauf, Geschäftsführung) daraus konkrete Handlungen ableiten und Entscheidungen treffen kann.
