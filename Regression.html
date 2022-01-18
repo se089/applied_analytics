@@ -282,8 +282,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#model">
-   Model
+  <a class="reference internal nav-link" href="#modell">
+   Modell
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -307,14 +307,14 @@
 <div class="section" id="plan">
 <h2>Plan<a class="headerlink" href="#plan" title="Permalink to this headline">¶</a></h2>
 <p><strong>Wie sollten wir unser Budget auf unsere Marketingkanäle verteilen?</strong></p>
-<p>Die Marketingabteilung möchte wissen, welche Marketingaktivitäten den Umsatz des Unternehmens am meisten steigert.</p>
+<p>Die Marketingabteilung möchte wissen, wie sie den resultierenden Umsatz und somit den Erfolg einer Marketingaktivität voraussagen können. Dies soll einerseits dabei helfen, dass Budget zu begründen und optimal auf verschiedene Kanäle zu verteilen. Gleichzeitig ist es aber auch eine Möglichkeit den Kampagnenerfolg zu bewerten, indem man prüft, inwieweit der tatsächliche Umsatz über bzw. unter dem prognostizierten Wert liegt.</p>
 <p><img alt="" src="_images/bmc_recommender.pdf" /></p>
 </div>
 <div class="section" id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
-<p>Die Basis der Regressionsanalyse bildet ein Datensatz, in dem alle vergangenen Kampagnen eingetragen sind. Für jede Kampagne gibt es die Information, wie viel Geld für verschiedene Kanäle ausgegeben wurde und wie hoch die generierten Umsätze waren. Der originale Datensatz stammt von <a class="reference external" href="https://www.kaggle.com/harrimansaragih/dummy-advertising-and-sales-data">kaggle</a>.</p>
-<p>Da es sich bei dem Datensatz um einen Trainingsdatensatz kümmert, besteht er lediglich aus wenigen Variablen <em>(TV, Print, Social Media und Influencer)</em>. Zudem bestand zwischen der Variable TV und unserer Zielvariable Sales eine 1:1 Korrelation, welche in der Realität unwahrscheinlich ist. Da die Umsetzung der Use Cases jedoch nur exemplarisch durchgeführt werden sollte und es keinen anderen passenden Datensatz zum Thema gab, entschied ich mich bei diesem zu bleiben und die Spalte <em>TV</em> aus der Modellierung auszuschließen.</p>
-<p>Der vollständigen Code befindet sich <a class="reference internal" href="Regression_Marketing.html"><span class="doc std std-doc">hier</span></a>.</p>
+<p>Die Basis der Regressionsanalyse bildet ein Datensatz, in dem das Budget und der Umsatz aller vergangenen Kampagnen eingetragen sind. Für jede Kampagne gibt es die Information, wie viel Geld für verschiedene Kanäle ausgegeben wurde und wie hoch die generierten Umsätze waren. Der originale Datensatz stammt von <a class="reference external" href="https://www.kaggle.com/harrimansaragih/dummy-advertising-and-sales-data">kaggle</a>.</p>
+<p>Da es sich bei dem Original-Datensatz um einen Trainingsdatensatz kümmert, besteht er nur aus wenigen Variablen <em>(TV, Print, Social Media und Influencer)</em>. Zudem bestand zwischen der Variable TV und der Zielvariable Sales eine 1:1 Korrelation, welche in der Realität unwahrscheinlich ist. Da die Umsetzung der Use Cases jedoch nur exemplarisch durchgeführt werden sollte und es keinen anderen passenden Datensatz zum Thema gab, entschied ich mich bei diesem zu bleiben und die Spalte <em>TV</em> aus der Modellierung auszuschließen.</p>
+<p>Der vollständige Code befindet sich <a class="reference internal" href="Regression_Marketing.html"><span class="doc std std-doc">hier</span></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -494,14 +494,18 @@
 </div></div></div>
 </div>
 </div>
-<div class="section" id="model">
-<h2>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="modell">
+<h2>Modell<a class="headerlink" href="#modell" title="Permalink to this headline">¶</a></h2>
 <p>Nach dem Data-Splitting, führte ich zunächst eine explorativen Datenanalyse durch. Zudem habe ich eine weitere Variable <em>Total Sum</em> eingefügt, die die Gesamtausgaben pro Kampagne angab. Die Plots zeigten eine positive, lineare Korrelation zwischen den Featuren und unserer Zielvariablen.</p>
-<p>Anschließend erstellte ich eine Pipeline, die verschiedene Pre-Processing Schritte mit der Modellierung verband. Aufgrund der linearen Korrelation entschied ich mich zunächst für ein simples lineares Regressionsmodel mit dem Feature <em>Total Sum</em>. Dieses gab jedoch keinen Aufschluss darüber, wie das Budget auf verschiedene Marketingkanäle verteilt werden sollte. Deswegen entschied ich mich trotz des bereits guten Scores für ein weiteres multiples Regressionsmodel basierend auf den anderen Featuren.</p>
-<p>Da die Plots eine lineare Korrelation der</p>
+<p>Anschließend erstellte ich eine Pipeline, die verschiedene Pre-Processing Schritte mit der Modellierung verband. Aufgrund der linearen Korrelation entschied ich mich zunächst für ein <strong>simples lineares Regressionsmodell</strong> mit dem Feature <em>Total Sum</em>. Dieses gab jedoch keinen Aufschluss darüber, wie das Budget auf verschiedene Marketingkanäle verteilt werden sollte. Deswegen entschied ich mich trotz des bereits guten Scores für ein weiteres <strong>multiples Regressionsmodell</strong> basierend auf den anderen Featuren. Dieses erzielte einen vergleichbaren Score und berücksichtigte zudem mehrere Kanäle. Durch den Einsatz von Hyperparameter Tuning konnte das Modell jedoch nicht mehr verbessert werden, was bedeutet, dass das Modell mit den Standardwerten bereits das beste Ergebnis erzielte.</p>
+<p>Um auch neuere Algorithmen auf den Datensatz anzuwenden, arbeitete ich zusätzlich noch mit einer <strong>Lasso Regression</strong> und XGBoost. Da die Plots bereits eine deutliche Linearität der Korrelation zeigten, brachte die Lasso Regression jedoch auch keine Verbesserung des Modells.</p>
+<p>Mit dem <strong>XGBoost Algorithmus</strong> konnte der Score jedoch im Vergleich zu den anderen Modellen gesteigert werden, weswegen ich mich am Ende auch für dieses Modell entschieden habe. Der XGBoost Algorithmus kombiniert mehrere schwächere, einfache  Modelle um Vorhersagen zu treffen. Es werden so lange weitere Modelle hinzugefügt, bis sich die Vorhersage nicht mehr verbessert. Des Weiteren biete XGBoost die Möglichkeit zu sehen, wie stark einzelne Feature in das Modell eingehen. Diese Feature Importance hat gezeigt, dass insbesondere die Ausgaben für Printwerbung einen großen Einfluss auf die Vorhersage hat. Dies ist wenig überraschend, da dieses Feature auch die stärkste Korrelation mit unserer Zielvariable Sales aufzeigt.</p>
+<p>Um das Modell abschließend zu bewerten, wurde es auf den <strong>Testdatensatz</strong> angewendet. Dort erzielte es einen vergleichbaren Score wie in der Testgruppe. Deswegen können wir davon ausgehen, dass das entwickelte Modell weder over- noch underfitted ist. Es erklärt somit 75-78% der Abweichung der Werte.</p>
 </div>
 <div class="section" id="evaluation">
 <h2>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">¶</a></h2>
+<p>Von der Vorhersage des Absatz profitieren auch weitere Abteilungen. Zum Beispiel kann damit auch der Website Traffic für den Zeitraum von Kampagnen vorhergesagt werden, um die nötigen technischen Voraussetzungen zu treffen. Außerdem kann der Einkauf damit den Bedarf der beworbenen Produkte besser schätzen.</p>
+<p>Wichtig beid er Interpretation ist jedoch, dass es sich bei dem Datensatz nach wie vor um Testdaten handelt. Die Linearität zwischen den Variablen wird ind er Realität so vermutlich nicht vorkommen. Außerdem beinhaltet der Datensatz nur sehr wenige Kanäle.</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>

@@ -4,4 +4,5 @@ Das Kerngeschäft bleibt jedoch der Onlinestore. Zalando verfolgt damit eine vie
 
 ## Business Model Canvas
 Das Business Model Canvas fasst das Kerngeschäft von Zalando zusammen und dient als Basis für die Definition der Use Cases.
+
 ![](../the-business-model-canvas-1.pdf)
