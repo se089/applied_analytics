@@ -534,13 +534,13 @@ Der vollständigen Code befindet sich <a class="reference internal" href="Cluste
 Bevor ich die Daten an den kMeans Algorithmus übergeben konnte, musste ich die Daten erst standardisieren. Um die optimale Anzahl an Clustern zu bestimmen, wurde beim kMeans Algorithmus der Silhouette Score bestimmt. Der Plot zeigte bereits sehr spitze Zacken, was darauf hindeutet, dass viele Datenpunkte nahe bei einem anderen Cluster liegen. Ich ermittelte dennoch die Cluster für k=2, da dies noch das beste Ergebnis erzielte.</p>
 <a class="mb-1 reference internal image-reference" href="_images/kMeans.png"><img alt="Ergebnis des kMeans-Algorithmus" class="mb-1 align-center" src="_images/kMeans.png" style="width: 300px;" /></a>
 <p>Da ich mit diesem Ergebnis jedoch noch nicht zufrieden war und zwei Cluster nur eine geringe Differenzierung der Kunden ermöglichen, führte ich auch noch ein hierarchisches Clustering durch. Das Dendogramm zeigte, dass die Kunden gut in 3 oder 4 Segmente geteilt werden konnten.</p>
-<a class="mb-1 reference internal image-reference" href=".../dendrogram.png"><img alt="Dendrogram" class="mb-1 align-center" src=".../dendrogram.png" style="width: 500px;" /></a>
-<a class="mb-1 reference internal image-reference" href=".../hierarchical.png"><img alt="Ergebnis des hierarchischen Clusterings" class="mb-1 align-center" src=".../hierarchical.png" style="width: 300px;" /></a>
+<a class="mb-1 reference internal image-reference" href="_images/dendrogram.png"><img alt="Dendrogram" class="mb-1 align-center" src="_images/dendrogram.png" style="width: 500px;" /></a>
+<a class="mb-1 reference internal image-reference" href="_images/hierarchical.png"><img alt="Ergebnis des hierarchischen Clusterings" class="mb-1 align-center" src="_images/hierarchical.png" style="width: 300px;" /></a>
 <p>Nach Bewertung der Plots entschied ich mich für das Hierarchische Clustering mit n=3, da dies einen differenzierten Blick auf die Kunden ermöglichte und sie zu sinnvollen Gruppen zusammenfasste.</p>
 </div>
 <div class="section" id="ergebnisse-und-handlungsempfehlungen">
 <h2>Ergebnisse und Handlungsempfehlungen<a class="headerlink" href="#ergebnisse-und-handlungsempfehlungen" title="Permalink to this headline">¶</a></h2>
-<a class="mb-1 reference internal image-reference" href=".../snake_plot.png"><img alt="Dendrogram" class="mb-1 align-center" src=".../snake_plot.png" style="width: 300px;" /></a>
+<a class="mb-1 reference internal image-reference" href="_images/snake_plot.png"><img alt="Dendrogram" class="mb-1 align-center" src="_images/snake_plot.png" style="width: 300px;" /></a>
 <p>Die Auswertung der Analyse ergibt 3 Kundensegmente. Diese unterscheiden sich in ihrem Wert, weswegen wir von Bronze, Silber und Gold-Kunden sprechen:</p>
 <ul class="simple">
 <li><p><strong>Gold:</strong> Das sind unsere liebsten und wichtigsten Kunden. Der letzte Einkauf ist sehr aktuell, sie kaufen regelmäßig und geben das meiste Geld aus. Glücklicherweise, gehören die meisten unserer Kunden zu dieser Gruppe. Es ist wichtig, dass sich Kampagnen in dieser Kundengruppe auf Kundenloyalität fokussieren z.B. durch individuelle Ansprache und exklusive Angebote.</p></li>
