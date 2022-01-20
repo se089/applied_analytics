@@ -318,14 +318,14 @@
 <h1>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="plan">
 <h2>Plan<a class="headerlink" href="#plan" title="Permalink to this headline">¶</a></h2>
-<p><strong>Wie können wir den Kundenwert bestimmen und unsere Marketingaktivitäten daran anpassen?</strong>
-Wir möchten unsere Kunden segmentieren, weil wir herausfinden möchten, wie wertvoll die Kunden für uns sind, um den Gruppen passende Angebote anzubieten und unser Marketingbudget basierend auf den Kundenwerten zu verteilen. Der Use Case ist deswegen besonders für die Marketing-Abteilung interessant.
-<img alt="" src="_images/bmc_clustering.pdf" /></p>
+<p><strong>Wie können wir den Kundenwert bestimmen und unsere Marketingaktivitäten daran anpassen?</strong></p>
+<p>Die Marketingabteilung möchte die Kunden in Gruppen segmentieren, um herauszufinden, wie wertvoll die Kunden für das Unternehmen sind, um im Anschluss den Gruppen passende Angebote anbieten und das Marketingbudget basierend auf den Kundenwerten verteilen zu können. Der Use Case ist jedoch auch für andere Abteilungen z.B. IT (Vorhersage Website Traffic) und Einkauf (Vorhersage Nachfrage) interessant.</p>
+<p><img alt="" src="_images/bmc_clustering.pdf" /></p>
 </div>
 <div class="section" id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
-<p>Die Kundenanalyse basiert auf der Verkaufshistorie des letzten Jahres. Darin sind alle Bestellungen jedes Kunden berücksichtigt. Der Datensatz für diesen Use Case ist von <a class="reference external" href="https://www.kaggle.com/vijayuv/onlineretail">kaggle</a>. Er stammt ursprünglich von einem Onlineshop, der sich im Gegensatz zu Zalando hauptsächlich an Großhändler richtet. Durch das Clustering nach dem RFM-Framework wurde dieser Unterschied jedoch minimiert.
-Der vollständigen Code befindet sich <a class="reference internal" href="Clustering_Marketing.html"><span class="doc std std-doc">hier</span></a>.</p>
+<p>Die Kundenanalyse basiert auf der Verkaufshistorie des letzten Jahres. Darin sind alle Bestellungen jedes Kunden enthalten. Der Beispiel-Datensatz für diesen Use Case ist von <a class="reference external" href="https://www.kaggle.com/vijayuv/onlineretail">kaggle</a>. Er stammt ursprünglich von einem Onlineshop, der sich im Gegensatz zu Zalando hauptsächlich an Großhändler richtet. Durch das Clustering nach dem RFM-Framework wurde dieser Unterschied jedoch minimiert.</p>
+<p>Der vollständigen Code befindet sich <a class="reference internal" href="Clustering_Marketing.html"><span class="doc std std-doc">hier</span></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -432,7 +432,8 @@ Der vollständigen Code befindet sich <a class="reference internal" href="Cluste
 </div>
 <div class="section" id="preprocessing">
 <h3>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h3>
-<p>Bevor ich mit dem Clustering begonnen habe, habe ich eine explorative Datenanalyse durchgeführt und den Datensatz bereinigt. Eine Schwierigkeit war hierbei, dass es teilweise Einträge gab, die in der Praxis eine zusätzliche Klärung mit dem Fachbereich benötigt hätten. Dazu gehörten zum Beispiel Zeilen mit einer negativen Bestellmenge oder fehlender Kundennummer. Außerdem gab es teilweise unrealistische Ausreißer wie z.B. negative Preise oder eine sehr hohe Menge an bestellten Produkten. Die Absprache mit dem Fachbereich war in unserem Test allerdings nicht möglich, sodass diese Datensätze von Beginn an ausgeschlossen wurden.</p>
+<p>Bevor ich mit dem Clustering beginne, führe ich eine explorative Datenanalyse durch und bereinige den Datensatz. Eine Schwierigkeit ist hierbei, dass es teilweise Einträge gibt, die in der Praxis eine zusätzliche Klärung mit dem Fachbereich benötigen würden. Dazu gehören u.a. Zeilen mit einer negativen Bestellmenge oder fehlender Kundennummer.</p>
+<p>Außerdem gibt es teilweise unrealistische Ausreißer wie z.B. negative Preise oder eine sehr hohe Menge an bestellten Produkten. Die Absprache mit dem Fachbereich ist im Test allerdings nicht möglich, sodass diese Datensätze von Beginn an ausgeschlossen werden.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -521,7 +522,7 @@ Der vollständigen Code befindet sich <a class="reference internal" href="Cluste
 <h3>RFM-Analyse<a class="headerlink" href="#rfm-analyse" title="Permalink to this headline">¶</a></h3>
 <p>Um den Kundenwert zu bestimmen, orientiere ich mich an den Variablen der <strong>RFM-Analyse (Recency, Frequency, Monetary)</strong>. Diese gruppiert Kunden basierend auf drei Kennzahlen und verfolgt das Ziel, Kunden zu identifizieren, die mit einer hohen Wahrscheinlichkeit positiv auf Marketingmaßnahmen reagieren:</p>
 <ul class="simple">
-<li><p><strong>Recency</strong> bezeichnet die Aktualität eines Kunden, z.B. wann der letzte Einkauf des Kunden war. Je länger der Kauf zurückliegt, desto unwahrscheinlicher ist eine positive Reaktion in einer Marketingkampagne.</p></li>
+<li><p><strong>Recency</strong> bezeichnet die Aktualität eines Kunden, z.B. wann der letzte Einkauf des Kunden war. Je länger der Kauf zurückliegt, desto unwahrscheinlicher ist eine positive Reaktion auf eine Marketingkampagne.</p></li>
 <li><p><strong>Frequency,</strong> die Kaufhäufigkeit, gibt an, wie regelmäßig ein Kunde unsere Seite nutzt. Je höher die Kaufhäufigkeit, desto treuer und wertvoller ist der Kunde.</p></li>
 <li><p><strong>Monetary</strong> bezeichnet den Geldwert, der mit dem Kunden in einer bestimmten Zeit generiert wurde. Kunden mit einem größeren Umsatz reagieren wahrscheinlicher auf Marketingmaßnahmen als Kunden mit einem geringeren Umsatz.</p></li>
 </ul>
@@ -530,22 +531,22 @@ Der vollständigen Code befindet sich <a class="reference internal" href="Cluste
 </div>
 <div class="section" id="model">
 <h2>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h2>
-<p>Bei der Modellierung arbeitete ich sowohl mit dem kMeans Algorithmus als auch mit einem hierarchischen, agglomerativen Clustering.
-Bevor ich die Daten an den kMeans Algorithmus übergeben konnte, musste ich die Daten erst standardisieren. Um die optimale Anzahl an Clustern zu bestimmen, wurde beim kMeans Algorithmus der Silhouette Score bestimmt. Der Plot zeigte bereits sehr spitze Zacken, was darauf hindeutet, dass viele Datenpunkte nahe bei einem anderen Cluster liegen. Ich ermittelte dennoch die Cluster für k=2, da dies noch das beste Ergebnis erzielte.</p>
+<p>Bei der Modellierung arbeite ich sowohl mit dem kMeans Algorithmus als auch mit einem hierarchischen, agglomerativen Clustering.
+Bevor ich die Daten an den kMeans Algorithmus übergeben kann, müssen die Daten standardisiert werden. Um die optimale Anzahl an Clustern zu bestimmen, wird beim kMeans Algorithmus der Silhouette Score bestimmt. Der Plot zeigt bereits sehr spitze Zacken, was darauf hindeutet, dass viele Datenpunkte nahe bei einem anderen Cluster liegen und somit auch einem anderen Cluster zugeordnet werden könnten. Um den Algorithmus mit dem hierarchischen Clustering zu vergleichen, führe ich dennoch ein kMeans Clustering für k=2 durch, da dies noch den besten Silhouette Score erzielt.</p>
 <a class="mb-1 reference internal image-reference" href="_images/kMeans.png"><img alt="Ergebnis des kMeans-Algorithmus" class="mb-1 align-center" src="_images/kMeans.png" style="width: 300px;" /></a>
-<p>Da ich mit diesem Ergebnis jedoch noch nicht zufrieden war und zwei Cluster nur eine geringe Differenzierung der Kunden ermöglichen, führte ich auch noch ein hierarchisches Clustering durch. Das Dendogramm zeigte, dass die Kunden gut in 3 oder 4 Segmente geteilt werden konnten.</p>
+<p>Da ich mit diesem Ergebnis jedoch noch nicht zufrieden bin und zwei Cluster nur eine geringe Differenzierung der Kunden ermöglichen, führe ich auch noch ein hierarchisches Clustering durch. Das Dendrogram zeigt bereits bessere Ergebnisse als der Silhouette Score. Die Kunden können demnach in 3 oder 4 Segmente geteilt werden.</p>
 <a class="mb-1 reference internal image-reference" href="_images/dendrogram.png"><img alt="Dendrogram" class="mb-1 align-center" src="_images/dendrogram.png" style="width: 500px;" /></a>
 <a class="mb-1 reference internal image-reference" href="_images/hierarchical.png"><img alt="Ergebnis des hierarchischen Clusterings" class="mb-1 align-center" src="_images/hierarchical.png" style="width: 300px;" /></a>
-<p>Nach Bewertung der Plots entschied ich mich für das Hierarchische Clustering mit n=3, da dies einen differenzierten Blick auf die Kunden ermöglichte und sie zu sinnvollen Gruppen zusammenfasste.</p>
+<p>Nach Bewertung der Plots entscheide ich mich für das hierarchische Clustering mit n=3, da dies einen differenzierten Blick auf die Kunden ermöglicht und sie zu sinnvollen Gruppen zusammenfasst.</p>
 </div>
 <div class="section" id="ergebnisse-und-handlungsempfehlungen">
 <h2>Ergebnisse und Handlungsempfehlungen<a class="headerlink" href="#ergebnisse-und-handlungsempfehlungen" title="Permalink to this headline">¶</a></h2>
 <a class="mb-1 reference internal image-reference" href="_images/snake_plot.png"><img alt="Dendrogram" class="mb-1 align-center" src="_images/snake_plot.png" style="width: 300px;" /></a>
-<p>Die Auswertung der Analyse ergibt 3 Kundensegmente. Diese unterscheiden sich in ihrem Wert, weswegen wir von Bronze, Silber und Gold-Kunden sprechen:</p>
+<p>Die Auswertung der Analyse ergibt 3 Kundensegmente. Diese unterscheiden sich in ihrem Wert, weswegen ich die Gruppen im Folgenden als Bronze, Silber und Gold-Kunden bezeichne:</p>
 <ul class="simple">
-<li><p><strong>Gold:</strong> Das sind unsere liebsten und wichtigsten Kunden. Der letzte Einkauf ist sehr aktuell, sie kaufen regelmäßig und geben das meiste Geld aus. Glücklicherweise, gehören die meisten unserer Kunden zu dieser Gruppe. Es ist wichtig, dass sich Kampagnen in dieser Kundengruppe auf Kundenloyalität fokussieren z.B. durch individuelle Ansprache und exklusive Angebote.</p></li>
-<li><p><strong>Silber:</strong> Diese Kunden sind weniger aktuell, kaufen aber dennoch noch vergleichsweise regelmäßig. Sie geben etwas weniger Geld aus als unsere Gold-Kunden. Es sollte vermieden werden, dass Silber-Kunden ihr Interesse am Shop verlieren und zu Bronze-Kunden werden. Deswegen ist das Ziel, die Kaufhäufigkeit und den monetären Wert dieser Kunden zu steigern und sie somit zu Gold-Kunden zu konvertieren. Das kann durch persönliche Angebote und regelmäßige Aktionen gefördert werden.</p></li>
-<li><p><strong>Bronze:</strong> Diese Kunden kaufen weniger häufig und geben am wenigsten Geld aus. Außerdem liegt ihr letzter Einkauf weiter in der Vergangenheit. Die Ansprache dieser Kunden hat eine geringerre Relevanz, da sie weniger stark zum Unternehmenserfolg beitragen. Gegebenenfalls könnten diese Kunden jedoch mit Retention Angeboten oder über Retargeting erneut angesprochen werden.</p></li>
+<li><p><strong>Gold:</strong> Das sind die wichtigsten und besten Kunden des Unternehmens. Der letzte Einkauf ist sehr aktuell, sie kaufen regelmäßig und geben das meiste Geld aus. Glücklicherweise, gehören die meisten Kunden des Unternehmens zu dieser Gruppe. Es ist wichtig, dass sich Kampagnen in dieser Kundengruppe auf Kundenloyalität fokussieren z.B. durch individuelle Ansprache und exklusive Angebote.</p></li>
+<li><p><strong>Silber:</strong> Diese Kunden sind weniger aktuell, kaufen aber dennoch vergleichsweise regelmäßig. Sie geben etwas weniger Geld aus als Gold-Kunden. Es sollte vermieden werden, dass Silber-Kunden ihr Interesse am Shop verlieren und zu Bronze-Kunden werden. Deswegen ist das Ziel, die Kaufhäufigkeit und den monetären Wert dieser Kunden zu steigern und sie somit zu Gold-Kunden zu konvertieren. Das kann durch persönliche Angebote und regelmäßige Aktionen gefördert werden.</p></li>
+<li><p><strong>Bronze:</strong> Diese Kunden kaufen weniger häufig und geben am wenigsten Geld aus. Außerdem liegt ihr letzter Einkauf weiter in der Vergangenheit. Die Ansprache dieser Kunden hat eine geringerre Relevanz, da sie weniger stark zum Unternehmenserfolg beitragen. Gegebenenfalls könnten diese Kunden jedoch mit Retention Angeboten oder über Retargeting erneut angesprochen und zum Kauf angeregt werden.</p></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">

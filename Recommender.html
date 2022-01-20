@@ -469,7 +469,7 @@ Total number of users: 4338
 </div>
 <div class="section" id="model">
 <h2>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h2>
-<p>Abhängig davon, ob ein Kunde identifiziert werden konnte und ob wir bereits Informationen über ihn sammeln konnten, wurden drei verschiedene Recommender entwickelt.</p>
+<p>Abhängig davon, ob ein Kunde identifiziert werden kann und ob wir bereits Informationen über ihn gesammelt haben, werden drei verschiedene Recommender entwickelt.</p>
 <ul class="simple">
 <li><p>Recommender 1: Beliebteste Produkte (Unbekannter Nutzer, keine Kaufhistorie)</p></li>
 <li><p>Recommender 2: Content-based filtering (Bekannter Nutzer, keine Kaufhistorie/nur Views)</p></li>
@@ -482,17 +482,19 @@ Total number of users: 4338
 </div>
 <div class="section" id="recommender-2-content-based-filtering">
 <h3>Recommender 2: Content-based Filtering<a class="headerlink" href="#recommender-2-content-based-filtering" title="Permalink to this headline">¶</a></h3>
-<p>Ziel dieses Recommender Systems ist es, einem Kunden, der bereits auf unsere Anzeigen reagiert hat, ähnliche Produkte zu dem von ihm angesehenen Produkt anzuzeigen. Dafür nutzen wir Content-based Filtering, d.h. wir vergleichen die Beschreibung der Produkte und finden Ähnlichkeiten. Dafür nutzen wir eine Tfidf-Matrix. Diese teilt die Beschreibung jedes Produkts in einzelne Wörter und gewichtet die Tokens abhängig von ihrer Frequenz. So kann jedes Produkt mit allen anderen verglichen und jeweils ein Score ermittelt werden, wie ähnlich die beiden Produkte sind. Abschließend werden die Produkte in absteigender Score-Reihenfolge geordnet und die Produkte mit dem höchsten Score können als Ad ausgespielt werden.</p>
+<p>Ziel dieses Recommender Systems ist es, einem Kunden, der bereits auf unsere Anzeigen reagiert hat, ähnliche Produkte zu dem von ihm angesehenen Produkt anzuzeigen. Dafür nutzen wir <strong>Content-based Filtering</strong>, d.h. wir vergleichen die Beschreibung der Produkte und finden Ähnlichkeiten.</p>
+<p>Dafür nutzen wir eine Tfidf-Matrix. Diese teilt die Beschreibung jedes Produkts in einzelne Wörter und gewichtet die Tokens abhängig von ihrer Frequenz. So kann jedes Produkt mit allen anderen verglichen und jeweils ein Score ermittelt werden, wie ähnlich die beiden Produkte sind. Abschließend werden die Produkte in absteigender Score-Reihenfolge geordnet und die Produkte mit dem höchsten Score können als Ad ausgespielt werden.</p>
 <p>Die Herausforderung war hierbei, dass die Produktbeschreibungen auch Satzzeichen enthielten und Synonyme verwendeten.</p>
 </div>
 <div class="section" id="recommender-3-collaborative-filtering">
 <h3>Recommender 3: Collaborative Filtering<a class="headerlink" href="#recommender-3-collaborative-filtering" title="Permalink to this headline">¶</a></h3>
-<p>Dieser Recommender hat den höchsten Personalisierungsgrad, da wir den Kunden identifizieren und seiner Bestellhistorie zuordnen können. Der Kunde wird bei diesem Recommender mit ähnlichen Nutzern verglichen und es werden ihm Produkte angezeigt, die ähnliche Nutzer gekauft haben. Hier spielt neben der Kunden- und Product-ID auch die Bestellmenge eine Rolle, die Aufschluss darüber gibt, wie gut einem Kunden das Produkt gefällt. Nach einer Feature Reduction kann wiederum eine Korrelationsmatrix ermittelt und ein Ähnlichkeitsscore definiert werden. Anhand dessen können wieder die Produkte mit dem höchsten Score als Ad ausgespielt werden.</p>
+<p>Dieser Recommender hat den höchsten Personalisierungsgrad, da wir den Kunden identifizieren und seiner Bestellhistorie zuordnen können. Hier wenden wir somit <strong>Collaborative Filtering</strong> an. Der Kunde wird bei diesem Recommender mit allen Nutzern verglichen. Nutzer, die in der Vergangenheit ähnliche Produkte gekauft haben, wie der betrachtete Kunde, werden als ähnlicher eingestuft als Nutzer mit einer anderen Bestellhistorie.</p>
+<p>Basierend darauf werden dem Kunde dann Produkte angezeigt, die diese ähnlichen Nutzer gekauft haben. Hier spielt neben der Kunden- und Product-ID auch die Bestellmenge eine Rolle, die Aufschluss darüber gibt, wie gut einem Kunden das Produkt gefällt. Nach einer Feature Reduction kann wiederum eine Korrelationsmatrix ermittelt und ein Ähnlichkeitsscore definiert werden. Anhand dessen können wieder die Produkte mit dem höchsten Score als Ad ausgespielt werden.</p>
 </div>
 </div>
 <div class="section" id="evaluation">
 <h2>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">¶</a></h2>
-<p>Der Aufbau der Recommender erfolgte exemplarisch auf Basis eines statischen Datensatzes. Damit die Recommender erfolgreich sind, ist es wichtig, diese an die aktuelle Datenquelle anzubinden. Da sich Kundeninteressen und das Sortiment stetig verändern, ist es wichtig, die Recommender nicht auf einer statischen Datenbasis zu betreiben.</p>
+<p>Der Aufbau der Recommender erfolgt exemplarisch auf Basis eines statischen Datensatzes. Damit die Recommender erfolgreich sind, ist es wichtig, diese an die aktuelle Datenquelle anzubinden. Da sich Kundeninteressen und das Sortiment stetig verändern, ist es wichtig, die Recommender nicht auf einer statischen Datenbasis zu betreiben.</p>
 <p>Auch wenn Recommender 3 den höchsten Personalisierungsgrad hat, bieten Recommender 1 und 2 eine gute Fallbacklösung. Deswegen ist das Zusammenspiel der Recommender besonders wichtig. Abhängig davon, welche Informationen über einen Nutzer vorliegen, muss beim Deployment entschieden werden, welcher Recommender genutzt wird.</p>
 </div>
 <div class="toctree-wrapper compound">
