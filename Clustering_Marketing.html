@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aim &#8212; Projektdokumentation</title>
+    <title>Code &#8212; Projektdokumentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -128,7 +128,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Regression_Marketing.html">
-     Aim
+     Code
     </a>
    </li>
   </ul>
@@ -145,7 +145,7 @@
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Aim
+     Code
     </a>
    </li>
   </ul>
@@ -162,7 +162,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Recommendation_Marketing.html">
-     Aim
+     Code
     </a>
    </li>
   </ul>
@@ -273,6 +273,11 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
+   Code
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aim">
    Aim
   </a>
   <ul class="visible nav section-nav flex-column">
@@ -483,7 +488,9 @@
         
               <div>
                 
-  <div class="cell docutils container">
+  <div class="tex2jax_ignore mathjax_ignore section" id="code">
+<h1>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import necessary libraries</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -510,6 +517,7 @@
 </div>
 </div>
 </div>
+</div>
 <div class="tex2jax_ignore mathjax_ignore section" id="aim">
 <h1>Aim<a class="headerlink" href="#aim" title="Permalink to this headline">¶</a></h1>
 <p>The aim of this project to divide our customers into several homogeneous groups. This allows the marketing department to address the different target groups more efficiently. We will perform a clustering based on RFM (Recency, Frequency, Monetary value). Frequency and monetary value are an indicator for the customer’s lifetime value, whereas recency shows the engagement of the customer.</p>
@@ -533,16 +541,16 @@ Features:</p>
 <h1>Import data<a class="headerlink" href="#import-data" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Clustering_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Clustering_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_17628</span><span class="o">/</span><span class="mf">1418013290.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Clustering_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<span class="ne">UnicodeDecodeError</span><span class="g g-Whitespace">                        </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_17979</span><span class="o">/</span><span class="mf">1426120944.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Clustering_Marketing.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 
 <span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
@@ -560,48 +568,35 @@ Features:</p>
 <span class="g g-Whitespace">    </span><span class="mi">588</span> 
 
 <span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">480</span> 
-<span class="g g-Whitespace">    </span><span class="mi">481</span>     <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">482</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">483</span> 
-<span class="g g-Whitespace">    </span><span class="mi">484</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">486</span> 
+<span class="g g-Whitespace">    </span><span class="mi">487</span>     <span class="k">with</span> <span class="n">parser</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">488</span>         <span class="k">return</span> <span class="n">parser</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">nrows</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">489</span> 
+<span class="g g-Whitespace">    </span><span class="mi">490</span> 
 
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">809</span>             <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">810</span> 
-<span class="ne">--&gt; </span><span class="mi">811</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">812</span> 
-<span class="g g-Whitespace">    </span><span class="mi">813</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read</span><span class="nt">(self, nrows)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1045</span>     <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1046</span>         <span class="n">nrows</span> <span class="o">=</span> <span class="n">validate_integer</span><span class="p">(</span><span class="s2">&quot;nrows&quot;</span><span class="p">,</span> <span class="n">nrows</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1047</span>         <span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="p">,</span> <span class="n">col_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">nrows</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1048</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1049</span>         <span class="k">if</span> <span class="n">index</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
 
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1038</span>             <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span>         <span class="c1"># error: Too many arguments for &quot;ParserBase&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1040</span>         <span class="k">return</span> <span class="n">mapping</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>  <span class="c1"># type: ignore[call-arg]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1041</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1042</span>     <span class="k">def</span> <span class="nf">_failover_to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">read</span><span class="nt">(self, nrows)</span>
+<span class="g g-Whitespace">    </span><span class="mi">222</span>         <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">223</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">low_memory</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">224</span>                 <span class="n">chunks</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reader</span><span class="o">.</span><span class="n">read_low_memory</span><span class="p">(</span><span class="n">nrows</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">225</span>                 <span class="c1"># destructive to chunks</span>
+<span class="g g-Whitespace">    </span><span class="mi">226</span>                 <span class="n">data</span> <span class="o">=</span> <span class="n">_concatenate_chunks</span><span class="p">(</span><span class="n">chunks</span><span class="p">)</span>
 
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">__init__</span><span class="nt">(self, src, **kwds)</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span> 
-<span class="g g-Whitespace">     </span><span class="mi">50</span>         <span class="c1"># open handles</span>
-<span class="ne">---&gt; </span><span class="mi">51</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_open_handles</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">53</span> 
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/_libs/parsers.pyx</span> in <span class="ni">pandas._libs.parsers.TextReader.read_low_memory</span><span class="nt">()</span>
 
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py</span> in <span class="ni">_open_handles</span><span class="nt">(self, src, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">227</span>             <span class="n">memory_map</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">228</span>             <span class="n">storage_options</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<span class="ne">--&gt; </span><span class="mi">229</span>             <span class="n">errors</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">230</span>         <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">231</span> 
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/_libs/parsers.pyx</span> in <span class="ni">pandas._libs.parsers.TextReader._read_rows</span><span class="nt">()</span>
 
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">705</span>                 <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">706</span>                 <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">707</span>                 <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">708</span>             <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">709</span>         <span class="k">else</span><span class="p">:</span>
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/_libs/parsers.pyx</span> in <span class="ni">pandas._libs.parsers.TextReader._tokenize_rows</span><span class="nt">()</span>
 
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;Clustering_Marketing.csv&#39;
+<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/_libs/parsers.pyx</span> in <span class="ni">pandas._libs.parsers.raise_parser_error</span><span class="nt">()</span>
+
+<span class="ne">UnicodeDecodeError</span>: &#39;utf-8&#39; codec can&#39;t decode byte 0xa3 in position 79780: invalid start byte
 </pre></div>
 </div>
 </div>
@@ -817,7 +812,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Clustering_Marketing_8_0.png" src="_images/Clustering_Marketing_8_0.png" />
+<img alt="_images/Clustering_Marketing_9_0.png" src="_images/Clustering_Marketing_9_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2191,7 +2186,7 @@ In a real project, we would have to talk again to the data owners. For our furth
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Clustering_Marketing_41_0.png" src="_images/Clustering_Marketing_41_0.png" />
+<img alt="_images/Clustering_Marketing_42_0.png" src="_images/Clustering_Marketing_42_0.png" />
 </div>
 </div>
 <p>The distribution of the variables are not symmetrical as we have extreme values on the right side of the distribution even though we removed the outliers. Furthermore, the three columns have different ranges and units. Therefore, further data preprocessing is needed for kMeans Clustering.</p>
@@ -2378,7 +2373,7 @@ In a real project, we would have to talk again to the data owners. For our furth
     </tr>
   </tbody>
 </table>
-</div></div><img alt="_images/Clustering_Marketing_45_1.png" src="_images/Clustering_Marketing_45_1.png" />
+</div></div><img alt="_images/Clustering_Marketing_46_1.png" src="_images/Clustering_Marketing_46_1.png" />
 </div>
 </div>
 </div>
@@ -2487,7 +2482,7 @@ In a real project, we would have to talk again to the data owners. For our furth
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
 </pre></div>
 </div>
-<img alt="_images/Clustering_Marketing_48_1.png" src="_images/Clustering_Marketing_48_1.png" />
+<img alt="_images/Clustering_Marketing_49_1.png" src="_images/Clustering_Marketing_49_1.png" />
 </div>
 </div>
 </div>
@@ -2643,23 +2638,23 @@ For n_clusters = 5 The average silhouette_score is : 0.2867897097214199
 For n_clusters = 6 The average silhouette_score is : 0.28213750961488054
 </pre></div>
 </div>
-<img alt="_images/Clustering_Marketing_52_1.png" src="_images/Clustering_Marketing_52_1.png" />
+<img alt="_images/Clustering_Marketing_53_1.png" src="_images/Clustering_Marketing_53_1.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="_images/Clustering_Marketing_52_3.png" src="_images/Clustering_Marketing_52_3.png" />
+<img alt="_images/Clustering_Marketing_53_3.png" src="_images/Clustering_Marketing_53_3.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="_images/Clustering_Marketing_52_5.png" src="_images/Clustering_Marketing_52_5.png" />
+<img alt="_images/Clustering_Marketing_53_5.png" src="_images/Clustering_Marketing_53_5.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="_images/Clustering_Marketing_52_7.png" src="_images/Clustering_Marketing_52_7.png" />
+<img alt="_images/Clustering_Marketing_53_7.png" src="_images/Clustering_Marketing_53_7.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="_images/Clustering_Marketing_52_9.png" src="_images/Clustering_Marketing_52_9.png" />
+<img alt="_images/Clustering_Marketing_53_9.png" src="_images/Clustering_Marketing_53_9.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
 </pre></div>
 </div>
@@ -2745,7 +2740,7 @@ From this we conclude that kMeans is less suitable for clustering the data. Neve
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Clustering_Marketing_59_0.png" src="_images/Clustering_Marketing_59_0.png" />
+<img alt="_images/Clustering_Marketing_60_0.png" src="_images/Clustering_Marketing_60_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2827,7 +2822,7 @@ From this we conclude that kMeans is less suitable for clustering the data. Neve
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Clustering_Marketing_61_0.png" src="_images/Clustering_Marketing_61_0.png" />
+<img alt="_images/Clustering_Marketing_62_0.png" src="_images/Clustering_Marketing_62_0.png" />
 </div>
 </div>
 <p>The two clusters show differences in the snake and 3D-plot. However, dividing the customers in only 2 groups gives a less detailed picture about the customer base. Also the scatter plot doesn’t show a significant difference between those two groups.</p>
@@ -2859,7 +2854,7 @@ From this we conclude that kMeans is less suitable for clustering the data. Neve
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Clustering_Marketing_65_0.png" src="_images/Clustering_Marketing_65_0.png" />
+<img alt="_images/Clustering_Marketing_66_0.png" src="_images/Clustering_Marketing_66_0.png" />
 </div>
 </div>
 <p>Hierarchical clustering connects objects that have a smaller distance to each other than to the objects of other clusters. The longer the lines in the dendogram, the more the elements that are merged differ. Therefore, the dendogram suggests a cluster of 3 to 4 clusters, which would already give a more detailed picture about our customer base than the kMeans clustering with k=2.</p>
@@ -2908,7 +2903,7 @@ From this we conclude that kMeans is less suitable for clustering the data. Neve
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Clustering_Marketing_70_0.png" src="_images/Clustering_Marketing_70_0.png" />
+<img alt="_images/Clustering_Marketing_71_0.png" src="_images/Clustering_Marketing_71_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2997,7 +2992,7 @@ From this we conclude that kMeans is less suitable for clustering the data. Neve
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Clustering_Marketing_72_0.png" src="_images/Clustering_Marketing_72_0.png" />
+<img alt="_images/Clustering_Marketing_73_0.png" src="_images/Clustering_Marketing_73_0.png" />
 </div>
 </div>
 <p>The three clusters show different characteristics and differentiate in their means. There differences can also be very well seen in the snake plot.</p>
@@ -3048,7 +3043,7 @@ From this we conclude that kMeans is less suitable for clustering the data. Neve
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;mpl_toolkits.mplot3d.art3d.Path3DCollection at 0x7faf7394f7c0&gt;
 </pre></div>
 </div>
-<img alt="_images/Clustering_Marketing_77_1.png" src="_images/Clustering_Marketing_77_1.png" />
+<img alt="_images/Clustering_Marketing_78_1.png" src="_images/Clustering_Marketing_78_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -3143,7 +3138,7 @@ From this we conclude that kMeans is less suitable for clustering the data. Neve
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Clustering_Marketing_79_0.png" src="_images/Clustering_Marketing_79_0.png" />
+<img alt="_images/Clustering_Marketing_80_0.png" src="_images/Clustering_Marketing_80_0.png" />
 </div>
 </div>
 <p>The four clusters of the hierarchical clustering (df_rfm_h4) have similar means and a similar distribution over the three categories. This shows, that the clusters are very similar to each other. Therefore, the hierarchical clustering with n=4 is not suitable for the segmentation.</p>
@@ -3169,7 +3164,7 @@ The clusters differ clearly from each other and give a more detailed picture of 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Clustering_Marketing_83_0.png" src="_images/Clustering_Marketing_83_0.png" />
+<img alt="_images/Clustering_Marketing_84_0.png" src="_images/Clustering_Marketing_84_0.png" />
 </div>
 </div>
 </div>

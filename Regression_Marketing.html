@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aim &#8212; Projektdokumentation</title>
+    <title>Code &#8212; Projektdokumentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -128,7 +128,7 @@
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Aim
+     Code
     </a>
    </li>
   </ul>
@@ -145,7 +145,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Clustering_Marketing.html">
-     Aim
+     Code
     </a>
    </li>
   </ul>
@@ -162,7 +162,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="Recommendation_Marketing.html">
-     Aim
+     Code
     </a>
    </li>
   </ul>
@@ -273,6 +273,11 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
+   Code
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aim">
    Aim
   </a>
   <ul class="visible nav section-nav flex-column">
@@ -481,7 +486,9 @@
         
               <div>
                 
-  <div class="cell docutils container">
+  <div class="tex2jax_ignore mathjax_ignore section" id="code">
+<h1>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import necessary libraries</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -493,6 +500,7 @@
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">,</span> <span class="n">color_codes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -514,73 +522,7 @@
 <h1>Import data<a class="headerlink" href="#import-data" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Regression_marketing_data.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">kw</span><span class="o">/</span><span class="n">s_xlzpvx06b3lqd79926zrb00000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_17676</span><span class="o">/</span><span class="mf">359445552.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Regression_marketing_data.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
-
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">309</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span>                 <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">311</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">312</span> 
-<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">584</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">585</span> 
-<span class="ne">--&gt; </span><span class="mi">586</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">587</span> 
-<span class="g g-Whitespace">    </span><span class="mi">588</span> 
-
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">480</span> 
-<span class="g g-Whitespace">    </span><span class="mi">481</span>     <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">482</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">483</span> 
-<span class="g g-Whitespace">    </span><span class="mi">484</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">809</span>             <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">810</span> 
-<span class="ne">--&gt; </span><span class="mi">811</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">812</span> 
-<span class="g g-Whitespace">    </span><span class="mi">813</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1038</span>             <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span>         <span class="c1"># error: Too many arguments for &quot;ParserBase&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1040</span>         <span class="k">return</span> <span class="n">mapping</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>  <span class="c1"># type: ignore[call-arg]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1041</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1042</span>     <span class="k">def</span> <span class="nf">_failover_to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">__init__</span><span class="nt">(self, src, **kwds)</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span> 
-<span class="g g-Whitespace">     </span><span class="mi">50</span>         <span class="c1"># open handles</span>
-<span class="ne">---&gt; </span><span class="mi">51</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_open_handles</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">53</span> 
-
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py</span> in <span class="ni">_open_handles</span><span class="nt">(self, src, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">227</span>             <span class="n">memory_map</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">228</span>             <span class="n">storage_options</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<span class="ne">--&gt; </span><span class="mi">229</span>             <span class="n">errors</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">230</span>         <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">231</span> 
-
-<span class="nn">~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">705</span>                 <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">706</span>                 <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">707</span>                 <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">708</span>             <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">709</span>         <span class="k">else</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;Regression_marketing_data.csv&#39;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Regression_marketing_data.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -713,7 +655,7 @@ memory usage: 143.0+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Regression_Marketing_12_0.png" src="_images/Regression_Marketing_12_0.png" />
+<img alt="_images/Regression_Marketing_13_0.png" src="_images/Regression_Marketing_13_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1053,7 +995,7 @@ dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
 </pre></div>
 </div>
-<img alt="_images/Regression_Marketing_27_1.png" src="_images/Regression_Marketing_27_1.png" />
+<img alt="_images/Regression_Marketing_28_1.png" src="_images/Regression_Marketing_28_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1064,10 +1006,10 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7fdf2594dee0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7fec2af5d310&gt;
 </pre></div>
 </div>
-<img alt="_images/Regression_Marketing_28_1.png" src="_images/Regression_Marketing_28_1.png" />
+<img alt="_images/Regression_Marketing_29_1.png" src="_images/Regression_Marketing_29_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1081,7 +1023,7 @@ dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;Influencer&#39;, ylabel=&#39;Sales&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/Regression_Marketing_29_1.png" src="_images/Regression_Marketing_29_1.png" />
+<img alt="_images/Regression_Marketing_30_1.png" src="_images/Regression_Marketing_30_1.png" />
 </div>
 </div>
 <div class="section" id="learnings">
@@ -1227,7 +1169,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
 </pre></div>
 </div>
@@ -1261,20 +1203,26 @@ dtype: float64
 0.7346764910521799
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
-/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
-/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
-/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.73851868 0.7273026  0.7346638  0.74064071 0.73166662]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
 </pre></div>
 </div>
@@ -1289,7 +1237,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Regression_Marketing_46_0.png" src="_images/Regression_Marketing_46_0.png" />
+<img alt="_images/Regression_Marketing_47_0.png" src="_images/Regression_Marketing_47_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1299,7 +1247,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Regression_Marketing_47_0.png" src="_images/Regression_Marketing_47_0.png" />
+<img alt="_images/Regression_Marketing_48_0.png" src="_images/Regression_Marketing_48_0.png" />
 </div>
 </div>
 <p>The plots reveal a relatively equal deviation. The line fits appropriately in the scatterplot and is not affected by outliers. However, this simple model gives no insight into how the budget should be distributed among the different channels. Therefore, we will now develop further models, which consider the information divided by channels and influencer type.</p>
@@ -1341,7 +1289,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
 </pre></div>
 </div>
@@ -1393,14 +1341,14 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;chi__k&#39;: &#39;all&#39;,
  &#39;lm__copy_X&#39;: True,
  &#39;lm__fit_intercept&#39;: True,
- &#39;lm__normalize&#39;: False}
+ &#39;lm__normalize&#39;: True}
 </pre></div>
 </div>
 </div>
@@ -1454,7 +1402,7 @@ Multiple regression with hyperparameter tuning:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Regression_Marketing_61_0.png" src="_images/Regression_Marketing_61_0.png" />
+<img alt="_images/Regression_Marketing_62_0.png" src="_images/Regression_Marketing_62_0.png" />
 </div>
 </div>
 </div>
@@ -1482,7 +1430,7 @@ Multiple regression with hyperparameter tuning:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
 </pre></div>
 </div>
@@ -1493,11 +1441,11 @@ Multiple regression with hyperparameter tuning:
                                                                                  strategy=&#39;constant&#39;)),
                                                                   (&#39;scaler&#39;,
                                                                    StandardScaler())]),
-                                                  &lt;sklearn.compose._column_transformer.make_column_selector object at 0x7fdf2b92e760&gt;),
+                                                  &lt;sklearn.compose._column_transformer.make_column_selector object at 0x7fec2c255490&gt;),
                                                  (&#39;cat&#39;,
                                                   Pipeline(steps=[(&#39;onehot&#39;,
                                                                    OneHotEncoder(handle_unknown=&#39;ignore&#39;))]),
-                                                  &lt;sklearn.compose._column_transformer.make_column_selector object at 0x7fdf2b92e790&gt;)])),
+                                                  &lt;sklearn.compose._column_transformer.make_column_selector object at 0x7fec2c255550&gt;)])),
                 (&#39;chi&#39;, SelectKBest(k=&#39;all&#39;)),
                 (&#39;lm&#39;, LassoCV(cv=5, max_iter=10000, random_state=0))])
 </pre></div>
@@ -1534,7 +1482,7 @@ Multiple regression with hyperparameter tuning:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/lib/python3.8/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/sophiaengstler/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/sklearn/feature_selection/_univariate_selection.py:111: RuntimeWarning: invalid value encountered in true_divide
   msw = sswn / float(dfwn)
 </pre></div>
 </div>
@@ -1669,7 +1617,7 @@ Multiple regression with hyperparameter tuning:
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Nano&#39;, &#39;Macro&#39;, &#39;Micro&#39;, &#39;Mega&#39;]
-Categories (4, object): [&#39;Nano&#39;, &#39;Macro&#39;, &#39;Micro&#39;, &#39;Mega&#39;]
+Categories (4, object): [&#39;Macro&#39;, &#39;Mega&#39;, &#39;Micro&#39;, &#39;Nano&#39;]
 </pre></div>
 </div>
 </div>
@@ -1682,8 +1630,8 @@ Categories (4, object): [&#39;Nano&#39;, &#39;Macro&#39;, &#39;Micro&#39;, &#39;
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([9.88744359e-01, 9.61831323e-03, 3.41917727e-04, 5.49632412e-04,
-       2.23553659e-04, 5.22223908e-04])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([9.88783732e-01, 9.61225065e-03, 3.42829963e-04, 5.59298936e-04,
+       2.24240721e-04, 4.77647537e-04])
 </pre></div>
 </div>
 </div>
@@ -1707,7 +1655,7 @@ Categories (4, object): [&#39;Nano&#39;, &#39;Macro&#39;, &#39;Micro&#39;, &#39;
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Feature Importance (MDI)&#39;)
 </pre></div>
 </div>
-<img alt="_images/Regression_Marketing_85_1.png" src="_images/Regression_Marketing_85_1.png" />
+<img alt="_images/Regression_Marketing_86_1.png" src="_images/Regression_Marketing_86_1.png" />
 </div>
 </div>
 <p>The plot reveals that <em>Print</em> has by far the highest impact on our model prediction. This is due to the fact that there is also a significantly higher correlation between the feature and our target variable. The categorical variable Influencer, on the other hand, has little to no influence on the model. This was expected as the boxplots showed a mostly even distribution in the dataframe.</p>
@@ -1801,8 +1749,8 @@ Therefore, we decide to use the <strong>Gradient Boosting Tree Regression Model<
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>XGBoost Regressor without hyperparameter tuning: 
-0.7556727890248547
-0.7548664285925935
+0.7556598433029416
+0.7548534401455256
 </pre></div>
 </div>
 </div>
@@ -1814,7 +1762,7 @@ Therefore, we decide to use the <strong>Gradient Boosting Tree Regression Model<
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Regression_Marketing_92_0.png" src="_images/Regression_Marketing_92_0.png" />
+<img alt="_images/Regression_Marketing_93_0.png" src="_images/Regression_Marketing_93_0.png" />
 </div>
 </div>
 <p>The application of the model shows a similar result to the performance with our trainings-dataset. Therefore, it is probably neither over- or underfitted.</p>
