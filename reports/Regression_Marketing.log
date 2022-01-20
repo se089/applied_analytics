@@ -22,7 +22,7 @@ df = pd.read_csv('Regression_marketing_data.csv', delimiter=',')
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mFileNotFoundError[0m                         Traceback (most recent call last)
-[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_71222/359445552.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/var/folders/kw/s_xlzpvx06b3lqd79926zrb00000gn/T/ipykernel_17676/359445552.py[0m in [0;36m<module>[0;34m[0m
 [0;32m----> 1[0;31m [0mdf[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mread_csv[0m[0;34m([0m[0;34m'Regression_marketing_data.csv'[0m[0;34m,[0m [0mdelimiter[0m[0;34m=[0m[0;34m','[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m
 [0;32m~/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/pandas/util/_decorators.py[0m in [0;36mwrapper[0;34m(*args, **kwargs)[0m
